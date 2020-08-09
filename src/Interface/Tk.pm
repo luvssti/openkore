@@ -39,7 +39,7 @@ use Globals;
 use Field;
 use Settings;
 use Misc;
-use Utils qw /makeCoordsDir makeCoordsFromTo/;
+use Utils qw /makeCoordsDir makeCoordsFromTo timeOut/;
 
 # global vars
 our $line_limit = 1000;
@@ -47,6 +47,7 @@ our %fgcolors;
 our $statText;
 our @actorNameList;
 our %actorIDList;
+our $interface_timeout = {timeout => 0.5, time => time};
 
 # Maps color names to color codes and font weights.
 # Format: [R, G, B, bold]
@@ -175,8 +176,8 @@ sub getInput{
 
 sub update {
 	my $self = shift;
+	$interface_timeout->{'time'} = time;
 	$self->{mw}->update();
-	
 	$self->updateStatus;
 
 	if ($^O eq 'MSWin32' && $self->{SettingsObj}) {
@@ -195,7 +196,13 @@ sub writeOutput {
 	my $message = shift || '';
 	my $domain = shift || '';
 	my ($color);
-	
+
+	# workaround to avoid console hang while loading file
+	if(timeOut($interface_timeout)) {
+		$interface_timeout->{'time'} = time;
+		$self->{mw}->update();
+	}
+
 	$color = $consoleColors{$type}{$domain} if (defined $type && defined $domain && defined $consoleColors{$type});
 	$color = $consoleColors{$type}{'default'} if (!defined $color && defined $type);
 	$color = 'default' unless defined $color;
@@ -253,7 +260,7 @@ sub initTk {
 	$self->{mw}->protocol('WM_DELETE_WINDOW', [\&OnExit, $self]);
 	$self->{mw}->Icon(-image=>$self->{mw}->Photo(-file=>"./src/build/openkore.gif", -format => 'gif'));
 	$self->{mw}->title("$Settings::NAME");
-	$self->{mw}->minsize(650,400);
+	$self->{mw}->minsize(700,500);
 
 	# init window content
 	$self->initMenu;
@@ -1524,6 +1531,7 @@ sub updateHook {
 	return unless defined $self->{mw};
 	$self->updateCharacter;
 	$self->updatePos();
+	$interface_timeout->{'time'} = time;
 	$self->{mw}->update();
 	$self->setAiText("@ai_seq");
 }
