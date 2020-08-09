@@ -522,7 +522,7 @@ sub hideConsole {
 		# Hide Console
 		my $console;
 		eval 'use Win32::Console; $console = new Win32::Console(STD_OUTPUT_HANDLE);';
-		console->Free();
+		$console->Free();
 	}
 }
 
