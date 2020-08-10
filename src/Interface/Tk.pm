@@ -247,6 +247,17 @@ sub title {
 	}
 }
 
+sub errorDialog {
+	my $self = shift;
+	my $msg = shift;
+	$self->{mw}->messageBox(
+		-icon => 'error',
+		-message => $msg,
+		-title => 'Error',
+		-type => 'Ok'
+		);
+}
+
 
 ################################################################
 # Private? Method
