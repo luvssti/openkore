@@ -300,7 +300,7 @@ sub initMenu {
 		["~$Settings::NAME",
 			[
 				[qw/command Respawn/, -command => sub{push(@{ $self->{input_que} }, "respawn");}],
-				[qw/command CharSelect/, -command => sub{push(@{ $self->{input_que} }, "charselect");}],
+				[qw/command CharSelect/, -command => sub{configModify ('char', undef, 1); push(@{ $self->{input_que} }, "charselect");}],
 				[qw/command Relog/, -command => sub{push(@{ $self->{input_que} }, "relog");}],
 				'',
 				[qw/command Hide-To-Try  -accelerator Ctrl+X/, -command => sub{return;}],
