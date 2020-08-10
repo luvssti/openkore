@@ -1013,18 +1013,6 @@ sub OnExit{
 	}
 }
 
-sub showManual {
-	my $self = shift;
-
-	my $url;
-	if ($config{'manualURL'}) {
-		$url = $config{'manualURL'};
-	} else {
-		$url = 'http://wiki.openkore.com/index.php?title=Manual';
-	}
-	$self->{ShellExecute}->Call(0, '', $url, '', '', 1);
-}
-
 #######
 #
 # Menu onClick Handlers
@@ -1109,6 +1097,10 @@ sub onActorListBoxClick {
 				} elsif ($actor->isa('Actor::NPC')) {
 					Log::warning("Talking with NPC requested by click in listbox\n");
 					Commands::run("talk " . $actor->{binID});
+
+				} elsif ($actor->isa('Actor::Portal')) {
+					Log::warning("Moving to the portal requested by click in listbox\n");
+					Commands::run("move " . $actor->{binID});
 				}
 
 				$self->{input}->focus();
