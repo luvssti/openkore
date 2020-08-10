@@ -30,6 +30,7 @@ use Tk::BrowseEntry;
 use Tk::NoteBook;
 use Tk::ProgressBar;
 use Tk::TList;
+use Tk::PNG;
 
 # openkore imports
 use Interface;
@@ -269,9 +270,11 @@ sub initTk {
 	# init window
 	$self->{mw} = MainWindow->new();
 	$self->{mw}->protocol('WM_DELETE_WINDOW', [\&OnExit, $self]);
-	$self->{mw}->Icon(-image=>$self->{mw}->Photo(-file=>"./src/build/openkore.gif", -format => 'gif'));
+
 	$self->{mw}->title("$Settings::NAME");
 	$self->{mw}->minsize(700,500);
+
+	$self->{mw}->iconimage ( $self->{mw}->Photo ( -file   => './src/build/openkore.png', -format => 'PNG', -width  => 32, -height => 32 ));
 
 	# init window content
 	$self->initMenu;
@@ -1124,6 +1127,8 @@ sub OpenMap {
 	my ($self, $param2) = @_;
 	$self = $param2 if ($param2);
 
+	return unless defined $field->baseName;
+
 	if (!exists $self->{map}) {
 		undef $self->{obj};
 		$self->{map} = $self->{mw}->Toplevel();
@@ -1137,6 +1142,7 @@ sub OpenMap {
 			}
 		);
 		$self->{map}->resizable(0,0);
+		$self->{map}->iconimage ( $self->{mw}->Photo ( -file   => './src/build/openkore.png', -format => 'PNG', -width  => 32, -height => 32 ));
 		$self->{map}{'canvas'} = $self->{map}->Canvas(-width => 200, -height => 200,-background => 'white')->pack(-side => 'top');
 		$self->loadMap;
 		$self->{map}->bind('<1>', [\&dblchk, $self, Ev('x') , Ev('y')]);
@@ -1163,6 +1169,8 @@ sub _map {
 
 sub loadMap {
 	my $self = shift;
+	return unless defined $field->baseName;
+	return unless defined $self->{map}{'canvas'};
 	$self->{map}{'canvas'}->delete('map');
 	$self->{map}{'canvas'}->createText(50,20,-text =>'Processing..',-tags=>'map');
 
