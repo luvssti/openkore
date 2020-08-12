@@ -1491,7 +1491,7 @@ sub addActorListBox {
 	my $x = $actor->{pos_to}{x} || $actor->{pos}{x};
 	my $y = $actor->{pos_to}{y} || $actor->{pos}{y};
 
-	$actorIDList{$actor->{ID}} = {'ID' => $actor->{ID}, 'listBoxName' => $actor->{name}." (".$x.",".$y.")"};
+	$actorIDList{$actor->{ID}} = {'ID' => $actor->{ID}, 'listBoxName' => $actor->{name}. " (" . $actor->{binID} . ") " . "(" . $x . "," . $y . ")"};
 
 	$self->updateListBox;
 }
