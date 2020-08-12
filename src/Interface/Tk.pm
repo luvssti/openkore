@@ -1092,6 +1092,7 @@ sub onActorListBoxClick {
 					main::attack($actor->{ID});
 
 				} elsif ($actor->isa('Actor::Item')) {
+					Log::warning("Getting item requested by click in listbox\n");
 					main::take($actor->{ID});
 
 				} elsif ($actor->isa('Actor::NPC')) {
@@ -1411,7 +1412,9 @@ sub addHooks {
 	Plugins::addHook('packet/actor_moved', \&mapMoveActor, $self);
 	Plugins::addHook('packet/actor_died_or_disappeared', \&mapRemoveActor, $self);
 	Plugins::addHook('packet/map_change', \&mapClearActor, $self);
-	Plugins::addHook('packet/map_changed', \&mapClearActor, $self);
+	Plugins::addHook('packet/item_exists', \&mapAddActor, $self);
+	Plugins::addHook('packet/item_appeared', \&mapAddActor, $self);
+	Plugins::addHook('packet/item_disappeared', \&mapRemoveActor, $self);	
 }
 
 sub mapAddActor {
@@ -1420,13 +1423,16 @@ sub mapAddActor {
 	my $self = shift;
 
 	my $actor = Actor::get($args->{ID});
-	my $object_type = $args->{object_type} || $actor->{type};
-	my $type = $args->{type} || $actor->{type};
 
-	my $type_name = $self->defineType($object_type, $type, $actor->{hair_style});
+	unless ($actor->isa('Actor::Item')) {
+		my $object_type = $args->{object_type} || $actor->{type};
+		my $type = $args->{type} || $actor->{type};
 
-	$self->addActorListBox($actor, $type_name);
-	$self->addObj($args->{ID}, $type_name, $actor->{pos}{x}, $actor->{pos}{y}) if ($self->mapIsShown());
+		my $type_name = $self->defineType($object_type, $type, $actor->{hair_style});
+		$self->addObj($args->{ID}, $type_name, $actor->{pos}{x}, $actor->{pos}{y}) if ($self->mapIsShown());
+	}
+
+	$self->addActorListBox($actor);
 }
 
 sub mapMoveActor {
@@ -1440,7 +1446,7 @@ sub mapMoveActor {
 
 	my $type_name = $self->defineType($object_type, $type, $actor->{hair_style});
 
-	$self->addActorListBox($actor, $type_name);
+	$self->addActorListBox($actor);
 
 	my (%coordsFrom, %coordsTo);
 	makeCoordsFromTo(\%coordsFrom, \%coordsTo, $args->{coords});
@@ -1456,10 +1462,13 @@ sub mapRemoveActor {
 	my $hookname = shift;
 	my $args = shift;
 	my $self = shift;
+	my $actor = Actor::get($args->{ID});
 
 	$self->removeActorListBoxByID($args->{ID});
-	$self->removeObjByID($args->{ID}) if ($self->mapIsShown());
-	
+
+	unless ($actor->isa('Actor::Item')) {
+		$self->removeObjByID($args->{ID}) if ($self->mapIsShown());
+	}
 }
 
 sub mapClearActor {
@@ -1478,7 +1487,6 @@ sub mapClearActor {
 sub addActorListBox {
 	my $self = shift;
 	my $actor = shift;
-	my $type_name = shift;
 
 	my $x = $actor->{pos_to}{x} || $actor->{pos}{x};
 	my $y = $actor->{pos_to}{y} || $actor->{pos}{y};
