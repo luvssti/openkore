@@ -40,7 +40,7 @@ use Globals;
 use Field;
 use Settings;
 use Misc;
-use Utils qw /makeCoordsDir makeCoordsFromTo timeOut/;
+use Utils qw /makeCoordsDir makeCoordsFromTo timeOut distance/;
 
 # global vars
 our $line_limit = 1000;
@@ -1197,7 +1197,32 @@ sub dblchk {
 	my $self = shift;
 	my $mvcpx = $_[0];
 	my $mvcpy = $self->{map}{'map'}{'y'} - $_[1];
-	push(@{$self->{input_que}}, "move $mvcpx $mvcpy"); 
+	
+	if ($currentChatRoom ne "") {
+		Log::error("Error in function 'move' (Move Player)\n" .
+					"Unable to walk while inside a chat room!\n" .
+					"Use the command: chat leave\n");
+	} elsif ($shopstarted || $buyershopstarted) {
+		Log::error("Error in function 'move' (Move Player)\n" .
+										"Unable to walk while the shop/buying is open!\n" .
+										"Use the command: closeshop or closebuyershop\n");
+	} elsif (AI::is("NPC")) {
+		Log::error("Error in function 'move' (Move Player)\n" .
+										"Unable to walk while talking NPC!\n" .
+										"Please finish the NPC conversation\n");
+	} else {
+		if($self->{portals} && $self->{portals}->{$field->baseName} && @{$self->{portals}->{$field->baseName}}) {
+			foreach my $portal (@{$self->{portals}->{$field->baseName}}){
+				if (distance($portal,{x=>$mvcpx,y=>$mvcpy}) <= 8) {
+					$mvcpx = $portal->{x};
+					$mvcpy = $portal->{y};
+					Log::message("Moving to Portal $mvcpx, $mvcpy\n");
+					last;
+				}
+			}
+		}
+		push(@{$self->{input_que}}, "move $mvcpx $mvcpy"); 
+	}
 } 
 
 sub mapIsShown {
@@ -1399,7 +1424,7 @@ sub mapAddPortals {
 			if ($pos->{npcType}) {
 				# TODO: check if the npc is already in sight
 			} else {
-				my $id = $field->baseName.$pos->{x}, $pos->{y};
+				my $id = $field->baseName.$pos->{x}.$pos->{y};
 				$self->addObj($id, "portal", $pos->{x}, $pos->{y});
 			}			
 		}
