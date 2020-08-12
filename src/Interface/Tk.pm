@@ -1146,6 +1146,7 @@ sub OpenMap {
 		$self->mapAddNpcs;
 		$self->mapAddParty;
 		$self->mapAddGuild;
+		$self->mapAddPortals;
 	} else {
 		undef $self->{obj};
 		$self->{map}->destroy();
@@ -1315,7 +1316,10 @@ sub removeAllObj {
 }
 
 sub parsePortals {
+	my $hookname = shift;
+	my $args = shift;
 	my $self = shift;
+
 	delete $self->{portals};
 
 	foreach my $portal (keys %portals_lut) {
@@ -1388,6 +1392,20 @@ sub mapAddNpcs {
 	}
 }
 
+sub mapAddPortals {
+	my $self = shift;
+	if ($self->{portals} && $self->{portals}->{$field->baseName} && @{$self->{portals}->{$field->baseName}}) {
+		foreach my $pos (@{$self->{portals}->{$field->baseName}}) {
+			if ($pos->{npcType}) {
+				# TODO: check if the npc is already in sight
+			} else {
+				my $id = $field->baseName.$pos->{x}, $pos->{y};
+				$self->addObj($id, "portal", $pos->{x}, $pos->{y});
+			}			
+		}
+	}
+}
+
 # FIXME: the color specified here is never used
 sub followObj {
 	my $self = shift;
@@ -1405,6 +1423,7 @@ sub followObj {
 sub addHooks {
 	my $self = shift;
 	Plugins::addHook('mainLoop_pre', \&updateHook, $self);
+	Plugins::addHook('postloadfiles', \&parsePortals, $self);
 	Plugins::addHook('packet/actor_exists', \&mapAddActor, $self);
 	Plugins::addHook('packet/actor_connected', \&mapAddActor, $self);
 	Plugins::addHook('packet/actor_spawned', \&mapAddActor, $self);
@@ -1412,6 +1431,7 @@ sub addHooks {
 	Plugins::addHook('packet/actor_moved', \&mapMoveActor, $self);
 	Plugins::addHook('packet/actor_died_or_disappeared', \&mapRemoveActor, $self);
 	Plugins::addHook('packet/map_change', \&mapClearActor, $self);
+	Plugins::addHook('packet/map_changed', \&mapClearActor, $self);
 	Plugins::addHook('packet/item_exists', \&mapAddActor, $self);
 	Plugins::addHook('packet/item_appeared', \&mapAddActor, $self);
 	Plugins::addHook('packet/item_disappeared', \&mapRemoveActor, $self);	
@@ -1482,6 +1502,7 @@ sub mapClearActor {
 	$self->removeAllObj;
 	$self->loadMap;
 	$self->{map}->title("Map View : ".$field->baseName);
+	$self->mapAddPortals;
 }
 
 sub addActorListBox {
