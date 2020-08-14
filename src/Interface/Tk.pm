@@ -48,6 +48,8 @@ our %fgcolors;
 our $statText;
 our @actorNameList;
 our %actorIDList;
+our @inventoryNameList;
+our %inventoryIDList;
 our $interface_timeout = {timeout => 0.5, time => time};
 
 # Maps color names to color codes and font weights.
@@ -349,7 +351,9 @@ sub initMenu {
 		# View Menu
 		['~View',
 			[
-				[qw/command Map  -accelerator Ctrl+M/, -command => [\&OpenMap, undef, $self]]
+				[qw/command Inventory/, -command => [\&OpenInventory, undef, $self]],
+				[qw/command Map  -accelerator Ctrl+M/, -command => [\&OpenMap, undef, $self]],
+				
 			],
 		],
 
@@ -527,7 +531,7 @@ sub initAccelarator {
 	$self->{mw}->bind('all','<Shift-F1>' => [\&menuForumURL, $self]);
 	$self->{mw}->bind('all','<Control-F4>' => sub {1;} ); # TODO: add hide to try here
 	$self->{input}->focus();
-	$self->{actor_list_box}->bind('<1>' => sub { $self->onActorListBoxClick($_[0]->curselection); });
+	$self->{actor_list_box}->bind('<Double-Button-1>' => sub { $self->onActorListBoxClick($_[0]->curselection); });
 
 	if ($^O eq 'MSWin32') {
 		$self->{input}->bind('<MouseWheel>' => [\&w32mWheel, $self, Ev('k')]);
@@ -812,7 +816,7 @@ sub fillFrames {
 		-side => 'top',
 	);
 	
-	$self->{actor_list_box} = $self->{actor_list}->Listbox(-selectmode => "single")->pack( -expand => 1,
+	$self->{actor_list_box} = $self->{actor_list}->Scrolled("Listbox", -scrollbars => "e", -selectmode => "single")->pack( -expand => 1,
 		-fill => 'both',
 		-side => 'top',
 		-padx => 5,);
@@ -1154,6 +1158,127 @@ sub OpenMap {
 	}
 }
 
+sub OpenInventory {
+	my ($self, $param2) = @_;
+	$self = $param2 if ($param2);
+
+	return unless defined $field->baseName;
+
+	if (!exists $self->{inventory}) {
+		$self->{inventory} = $self->{mw}->Toplevel();
+		$self->{inventory}->transient($self->{mw});
+		$self->{inventory}->title("Inventory View");
+		$self->{inventory}->protocol('WM_DELETE_WINDOW', 
+			sub {
+				$self->{inventory}->destroy();
+				delete $self->{inventory};
+			}
+		);
+		$self->{inventory}->minsize(200,300);
+		$self->{inventory}->iconimage ( $self->{mw}->Photo ( -file   => './src/build/openkore.png', -format => 'PNG', -width  => 32, -height => 32 ));
+		$self->{inventory_list_box} = $self->{inventory}->Scrolled("Listbox", -background => "white", -scrollbars => 'e', -selectmode => "single", -relief => 'groove',)->pack( -expand => 1,
+		-fill => 'both',
+		-side => 'top',
+		-padx => 5);
+		tie @inventoryNameList, "Tk::Listbox", $self->{inventory_list_box};
+
+		$self->loadInventory;
+		$self->{inventory_list_box}->bind( '<ButtonPress-3>', [ \&inventoryListBoxMenuContext, Ev('@'), $self, Ev('x'), Ev('y') ] );
+	} else {
+		$self->{inventory}->destroy();
+		delete $self->{inventory};
+	}
+}
+
+
+sub inventoryListBoxMenuContext {
+    my ( $lb, $xy, $self, $x, $y ) = @_;
+
+    $lb->selectionClear( 0, 'end' );
+    my $index = $lb->index($xy);
+	
+	if(defined($index) && $index >= 0) {
+		$lb->selectionSet($index);
+		foreach my $id (keys %inventoryIDList) {
+			if($inventoryIDList{$id}{'listBoxIndex'} == $index) {
+				my $item = $char->inventory->getByID($id);
+				my @menu_choices;
+				Scalar::Util::weaken($item);
+				
+				if ($item->usable) {
+					push(@menu_choices, [Button => "Use one on self",  -command => sub { $item->use; }]);
+				}
+
+				if ($item->equippable) {
+					if ($item->{equipped}) {
+						push(@menu_choices, [Button => "Unequip",  -command => sub { $item->unequip; }]);
+					} elsif ($item->{identified}) {
+						push(@menu_choices, [Button => "Equip",  -command => sub { $item->equip; }]);
+					}
+				}
+
+				if ($item->mergeable) {
+					push(@menu_choices, [Button => "Start card merging",  -command => sub { Commands::run ('card use ' . $item->{binID}); }]);
+				}
+
+				unless ($item->{equipped}) {
+					push(@menu_choices, [Button => "Drop All",  -command => sub { Commands::run ('drop ' . $item->{binID} . ' ' . $item->{amount}); }]);
+					if ($char->cart->isReady) {
+						push(@menu_choices, [Button => "Move All to Cart",  -command => sub { Commands::run ('cart add ' . $item->{binID}); }]);
+					}
+					if ($char->storage->isReady) {
+						push(@menu_choices, [Button => "Move All to Storage",  -command => sub { Commands::run ('storage add ' . $item->{binID}); }]);
+					}
+					push(@menu_choices, [Button => "Sell All",  -command => sub { Commands::run ('sell ' . $item->{binID} . ';;sell done'); }]);
+				}
+
+				my $menu = $lb->Menu(-tearoff => 0,-title=> $item->{name},
+				  -menuitems => \@menu_choices,
+				   );
+				$menu->post($x, $y);
+				last;
+			}
+		}
+	}
+}
+	
+sub loadInventory {
+	my $self = shift;
+	@inventoryNameList = ();
+	%inventoryIDList = ();
+
+	foreach my $item (@{$char->inventory->getItems()}) {
+		$inventoryIDList{$item->{ID}}{'listBoxIndex'} = @inventoryNameList;
+		my $item_name = $item->{name} . " (".$item->{binID}.") x " . $item->{amount};
+		push(@inventoryNameList, $item_name);
+	}
+}
+
+sub inventoryChanged {
+	my $hookname = shift;
+	my $args = shift;
+	my $self = shift;
+
+	return if(!$self->inventoryIsShown());
+	$self->loadInventory;
+}
+
+sub clearInventoryListBox {
+	my $self = shift;
+	@inventoryNameList = ();
+	%inventoryIDList = ();
+}
+
+sub inventoryIsShown {
+	my $self = shift;
+	return defined $self->{inventory};
+}
+
+sub inventoryClick {
+
+}
+
+
 # map image loader functions
 
 sub _map {
@@ -1447,19 +1572,33 @@ sub followObj {
 
 sub addHooks {
 	my $self = shift;
-	Plugins::addHook('mainLoop_pre', \&updateHook, $self);
-	Plugins::addHook('postloadfiles', \&parsePortals, $self);
-	Plugins::addHook('packet/actor_exists', \&mapAddActor, $self);
-	Plugins::addHook('packet/actor_connected', \&mapAddActor, $self);
-	Plugins::addHook('packet/actor_spawned', \&mapAddActor, $self);
-	Plugins::addHook('packet/actor_display', \&mapMoveActor, $self);
-	Plugins::addHook('packet/actor_moved', \&mapMoveActor, $self);
-	Plugins::addHook('packet/actor_died_or_disappeared', \&mapRemoveActor, $self);
-	Plugins::addHook('packet/map_change', \&mapClearActor, $self);
-	Plugins::addHook('packet/map_changed', \&mapClearActor, $self);
-	Plugins::addHook('packet/item_exists', \&mapAddActor, $self);
-	Plugins::addHook('packet/item_appeared', \&mapAddActor, $self);
-	Plugins::addHook('packet/item_disappeared', \&mapRemoveActor, $self);	
+	Plugins::addHook('mainLoop_pre',						\&updateHook, $self);
+	Plugins::addHook('postloadfiles',						\&parsePortals, $self);
+	Plugins::addHook('packet/actor_exists',					\&mapAddActor, $self);
+	Plugins::addHook('packet/actor_connected',				\&mapAddActor, $self);
+	Plugins::addHook('packet/actor_spawned',				\&mapAddActor, $self);
+	Plugins::addHook('packet/actor_display',				\&mapMoveActor, $self);
+	Plugins::addHook('packet/actor_moved',					\&mapMoveActor, $self);
+	Plugins::addHook('packet/actor_died_or_disappeared',	\&mapRemoveActor, $self);
+	Plugins::addHook('packet/map_change', 					\&mapChangeUpdateInferface, $self);
+	Plugins::addHook('packet/map_changed', 					\&mapChangeUpdateInferface, $self);
+	Plugins::addHook('packet/item_exists', 					\&mapAddActor, $self);
+	Plugins::addHook('packet/item_appeared', 				\&mapAddActor, $self);
+	Plugins::addHook('packet/item_disappeared', 			\&mapRemoveActor, $self);
+	Plugins::addHook('packet/arrow_equipped',               \&inventoryChanged, $self);
+	Plugins::addHook('packet/card_merge_status',            \&inventoryChanged, $self);
+	Plugins::addHook('packet/deal_add_you',                 \&inventoryChanged, $self);
+	Plugins::addHook('packet/equip_item',                   \&inventoryChanged, $self);
+	Plugins::addHook('packet/identify',                     \&inventoryChanged, $self);
+	Plugins::addHook('packet/inventory_item_added',         \&inventoryChanged, $self);
+	Plugins::addHook('packet/inventory_item_removed',       \&inventoryChanged, $self);
+	Plugins::addHook('packet_useitem',                      \&inventoryChanged, $self);
+	Plugins::addHook('packet/inventory_items_nonstackable', \&inventoryChanged, $self);
+	Plugins::addHook('packet/inventory_items_stackable',    \&inventoryChanged, $self);
+	Plugins::addHook('packet/item_upgrade',                 \&inventoryChanged, $self);
+	Plugins::addHook('packet/unequip_item',                 \&inventoryChanged, $self);
+	Plugins::addHook('packet/use_item',                     \&inventoryChanged, $self);
+	Plugins::addHook('packet/mail_send',                    \&inventoryChanged, $self);
 }
 
 sub mapAddActor {
@@ -1516,18 +1655,24 @@ sub mapRemoveActor {
 	}
 }
 
-sub mapClearActor {
+sub mapChangeUpdateInferface {
 	my $hookname = shift;
 	my $args = shift;
 	my $self = shift;
 
 	$self->clearActorListBox;
 
-	return if (!$self->mapIsShown());
-	$self->removeAllObj;
-	$self->loadMap;
-	$self->{map}->title("Map View : ".$field->baseName);
-	$self->mapAddPortals;
+	if ($self->mapIsShown()) {
+		$self->removeAllObj;
+		$self->loadMap;
+		$self->{map}->title("Map View : ".$field->baseName);
+		$self->mapAddPortals;
+	}
+	
+	if ($self->inventoryIsShown()) {
+		$self->clearInventoryListBox;
+		$self->loadInventory;
+	}
 }
 
 sub addActorListBox {
@@ -1678,6 +1823,30 @@ sub updatePos {
 					,-fill => '#ccccff', -outline=>'#ccccff');
 			}
 		}
+		my ($i, $args, $routeTask, $solution);
+		if (
+			defined ($i = AI::findAction ('route')) && ($args = AI::args ($i)) && (
+				($routeTask = $args->getSubtask) && %{$routeTask} && ($solution = $routeTask->{solution}) && @$solution
+				||
+				$args->{dest} && $args->{dest}{pos} && ($solution = [{x => $args->{dest}{pos}{x}, y => $args->{dest}{pos}{y}}])
+			)
+		) {
+			$self->{route} = [@$solution];
+		}
+		if ($self->{route} && @{$self->{route}}) {
+			$self->mapClearRoute;
+			$i = 0;
+			my $index = 1;
+			for (grep {not $i++ % (8 * 2)} reverse @{$self->{route}}) {
+				($x, $y) = ($_->{x}, $_->{y});
+				$self->{obj}{'route'}{$index} = $self->{map}{'canvas'}->createOval(
+						$x-2,$self->{map}{'map'}{'y'} - $y-2,
+						$x+2,$self->{map}{'map'}{'y'} - $y+2,
+						,-fill => '#FFB6C1', -outline=>'#FFB6C1');
+					$index++;
+			}
+			undef $self->{route};
+		}
 
 		# show circle of attack range
 		# $self->{map}{'canvas'}->delete($self->{map}{'range'}) if ($self->{map}{'range'});
@@ -1686,6 +1855,16 @@ sub updatePos {
 			# $x-$dis,$self->{map}{'map'}{'y'} - $y-$dis,
 			# $x+$dis,$self->{map}{'map'}{'y'} - $y+$dis,
 			# ,-outline=>'#ff0000');
+	}
+}
+
+sub mapClearRoute {
+	my $self = shift;
+	return if (!$self->mapIsShown());
+	foreach (keys %{$self->{obj}{'route'}}) {
+		my $id = $_;
+		$self->{map}{'canvas'}->delete($self->{obj}{'route'}{$id});
+		undef $self->{obj}{'route'}{$id};
 	}
 }
 
