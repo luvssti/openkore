@@ -1162,7 +1162,8 @@ sub OpenInventory {
 	my ($self, $param2) = @_;
 	$self = $param2 if ($param2);
 
-	return unless defined $field->baseName;
+	return unless defined $char;
+	return unless $char->inventory->isReady();
 
 	if (!exists $self->{inventory}) {
 		$self->{inventory} = $self->{mw}->Toplevel();
@@ -1175,6 +1176,7 @@ sub OpenInventory {
 			}
 		);
 		$self->{inventory}->minsize(200,300);
+		$self->{inventory}->geometry("200x300+".$self->{mw}->x."+".$self->{mw}->y);
 		$self->{inventory}->iconimage ( $self->{mw}->Photo ( -file   => './src/build/openkore.png', -format => 'PNG', -width  => 32, -height => 32 ));
 		$self->{inventory_list_box} = $self->{inventory}->Scrolled("Listbox", -background => "white", -scrollbars => 'e', -selectmode => "single", -relief => 'groove',)->pack( -expand => 1,
 		-fill => 'both',
