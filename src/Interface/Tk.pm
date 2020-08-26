@@ -1235,6 +1235,9 @@ sub inventoryListBoxMenuContext {
 				my $menu = $lb->Menu(-tearoff => 0,-title=> $item->{name},
 				  -menuitems => \@menu_choices,
 				   );
+
+				$x = $x + $self->{inventory}->x + 15;
+				$y = $y + $self->{inventory}->y + 20;
 				$menu->post($x, $y);
 				last;
 			}
