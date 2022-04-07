@@ -824,11 +824,11 @@ getAuto {
 
 ######## Debugging options; only useful for developers ########
 
-debug 1
-debugPacket_unparsed 1
-debugPacket_received 1
-debugPacket_ro_sent 1
-debugPacket_sent 1
+debug 0
+debugPacket_unparsed 0
+debugPacket_received 0
+debugPacket_ro_sent 0
+debugPacket_sent 0
 debugPacket_exclude
 debugPacket_include
 debugPacket_include_dumpMethod
