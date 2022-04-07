@@ -1,7 +1,36 @@
-//-- 최종갱신 오전 11:13 2013-04-23 본서버
+// ¼ö»óÇÑ ³­ÆÄ¼±
+1@tre.rsw#Sunken Ship#
 
+//ÀÎÆ®·Î °³Æí
+iz_int.rsw#Ferry Stranded#
+iz_int01.rsw#Ferry Stranded#
+iz_int02.rsw#Ferry Stranded#
+iz_int03.rsw#Ferry Stranded#
+iz_int04.rsw#Ferry Stranded#
 
-// Izlude tutorial map
+int_land.rsw#Remote Island#
+int_land01.rsw#Remote Island#
+int_land02.rsw#Remote Island#
+int_land03.rsw#Remote Island#
+int_land04.rsw#Remote Island#
+
+//Àú·¹º§ °ø¼ºÀü
+te_prt_gld.rsw#Gloria#
+te_prtcas01.rsw#Gaebolg#
+te_prtcas02.rsw#Richard#
+te_prtcas03.rsw#Wigner#
+te_prtcas04.rsw#Heine#
+te_prtcas05.rsw#Nerious#
+teg_dun01.rsw#Subterranean Guild Dungeon#
+te_alde_gld.rsw#Kafragarten#
+te_aldecas01.rsw#Leilah#
+te_aldecas02.rsw#Pavianne#
+te_aldecas03.rsw#Jasmine#
+te_aldecas04.rsw#Roxie#
+te_aldecas05.rsw#Curly Sue#
+teg_dun02.rsw#Subterranean Guild Dungeon#
+
+//ÀÌÁî·çµå Æ©Åä¸®¾ó¸Ê
 prt_fild08d.rsw#Prontera field#
 prt_fild08c.rsw#Prontera field#
 prt_fild08b.rsw#Prontera field#
@@ -21,12 +50,12 @@ izlude_c.rsw#Satellite city Izlude#
 izlude_b.rsw#Satellite city Izlude#
 izlude_a.rsw#Satellite city Izlude#
 
-//Izlude renewal
-iz_int.rsw#Intro#
-iz_int01.rsw#Intro#
-iz_int02.rsw#Intro#
-iz_int03.rsw#Intro#
-iz_int04.rsw#Intro#
+//ÀÌÁî·çµå¸®´º¾ó
+//iz_int.rsw#Intro#
+//iz_int01.rsw#Intro#
+//iz_int02.rsw#Intro#
+//iz_int03.rsw#Intro#
+//iz_int04.rsw#Intro#
 iz_ac01.rsw#Academy1st floor#
 iz_ac02.rsw#Academy2nd floor#
 iz_ng01.rsw#Ninja Tutorial map#
@@ -36,6 +65,7 @@ treasure_n2.rsw#Izlude wreck 2nd floor#
 moc_prydn1.rsw#Morocc Pyramid Underground 1st Floor - Challenge#
 moc_prydn2.rsw#Morocc Pyramid Underground 2nd Floor - Challenge#
 
+//ep 14.2
 eclage.rsw#Eclage#
 ecl_fild01.rsw#Blooming Flower Land#
 ecl_in01.rsw#Inside of Eclage#
@@ -50,7 +80,7 @@ ecl_tdun04.rsw#Bifrost Floor 4#
 ecl_hub01.rsw#Eclage Perimeter#
 que_avan01.rsw#Avant's Laboratory#
 
-
+//·ÎÄÃ¶óÀÌÂ¡ Æ÷Æ® ¸»¶ó¾ß
 malaya.rsw#Port Malaya#
 ma_fild01.rsw#Baryo Mahiwaga#
 ma_fild02.rsw#Forest#
@@ -71,6 +101,7 @@ ma_zif08.rsw#Inside of Jeepney#
 ma_zif09.rsw#Inside of Jeepney#
 job_ko.rsw#Hidden Place#
 
+//±æµåÀüÅõ °ü·Ã
 gld_dun01_2.rsw#Guild basement dungeon 2nd floor#
 gld_dun02_2.rsw#Guild basement dungeon 2nd floor#
 gld_dun03_2.rsw#Guild basement dungeon 2nd floor#
@@ -84,6 +115,8 @@ lhz_dun04.rsw#Human Experimentation Laboratory B4#
 que_lhz.rsw#Human Experimentation Laboratory B4#
 1@lhz.rsw#Wolfchev's Lab#
 iz_dun05.rsw#Undersea Tunnel#
+
+//¸»¶ûµµ
 malangdo.rsw#Malangdo#
 mal_in01.rsw#Malangdo Inside#
 mal_in02.rsw#Inside the Ship#
@@ -94,6 +127,14 @@ mal_dun01.rsw#Starry Coral Area#
 dic_dun03.rsw#Skarava hall#
 que_house_s.rsw#Weird house#
 
+//·ÎÄÃ¶óÀÌÂ¡ µ¥¿ÍÅ¸
+dewata.rsw#Dewata#
+dew_in01.rsw#Inside Dewata#
+dew_fild01.rsw#Dewata Field (Tribal Village)#
+dew_dun01.rsw#Volcanic Island of Krakatoa#
+dew_dun02.rsw#Istana Cave#
+
+//ep 14.1
 bif_fild01.rsw#Bifrost Bridge#
 bif_fild02.rsw#Bifrost Bridge#
 1@mist.rsw#The Hazy Maze Forest#
@@ -107,12 +148,18 @@ dic_dun01.rsw#Kamidal Tunnel#
 dic_dun02.rsw#Scaraba Hall#
 job3_gen01.rsw#Geneticist Lab#
 s_atelier.rsw#Shadow Workshop#
+
+//·ÎÄÃ¶óÀÌÂ¡ ºê¶óÁú¸®½º
 brasilis.rsw#Brasilis#
 bra_in01.rsw#Inside Brasilis#
 bra_fild01.rsw#Brasilis Field#
 bra_dun01.rsw#Beyond the Waterfall#
 bra_dun02.rsw#Beyond the Waterfall#
+
+//³«¿ø´Ü °³Æí ÈÄ ³»ºÎ
 moc_para01.rsw#Inside of Paradise Group Building in Morroc#
+
+//3Â÷ ÀüÁ÷ °ü·Ã ¸Ê
 job3_arch01.rsw#Waiting room for Arch Bishop Job Change#
 job3_arch02.rsw#Odin Temple#
 job3_arch03.rsw#Waiting room for Arch Bishop Job Change#
@@ -127,10 +174,14 @@ job3_rune03.rsw#Test room for Rune Knight Job Change#
 job3_war01.rsw#Test room for Warlock Job Change#
 job3_war02.rsw#Test room for Warlock Job Change#
 jupe_core2.rsw#The center of Juperos#
+
+//´ÏµåÈ£±×ÀÇ µÕÁö MD
 1@nyd.rsw#Nidhoggur's Nest#
 2@nyd.rsw#Nidhoggur's Nest#
 nyd_dun01.rsw#Yggdrasil Root#
 nyd_dun02.rsw#Yggdrasil Root#
+
+//ep 14.1 ÀÌ°è
 manuk.rsw#Manuk#
 man_fild02.rsw#Manuk Field#
 man_in01.rsw#Inside Manuk#
@@ -148,6 +199,7 @@ man_fild03.rsw#Manuk Field#
 spl_fild02.rsw#Splendide Field#
 spl_fild03.rsw#Splendide Field#
 moc_fild22b.rsw#Dimensional Gorge#
+
 que_dan01.rsw#Hugel Field#
 que_dan02.rsw#Inside of the Abandoned House in Juno#
 schg_que01.rsw#Morestone Prairie#
@@ -194,7 +246,6 @@ mosk_fild02.rsw#Okrestnosti of Moscovia#
 mosk_dun01.rsw#Les Forest#
 mosk_dun02.rsw#Temny Forest#
 mosk_dun03.rsw#Dremuci Forest#
-mosk_que.rsw#Marozka's Cave#
 schg_cas01.rsw#Nidhoggur Guild#
 schg_cas02.rsw#Nidhoggur Guild#
 schg_cas03.rsw#Nidhoggur Guild#
@@ -224,7 +275,6 @@ veins.rsw#Veins, the Canyon Village#
 ve_in.rsw#Inside Veins#
 ve_in02.rsw#Inside Veins#
 ve_fild01.rsw#Veins Field#
-mal_in02.rsw#Inside the Ship#
 ve_fild02.rsw#Veins Field#
 ve_fild03.rsw#Veins Field#
 ve_fild04.rsw#Veins Field#
@@ -435,8 +485,9 @@ job_cru.rsw#Crusader Realm#
 job_monk.rsw#Saint Capitolina Abbey#
 monk_test.rsw#Saint Capitolina Abbey#
 in_rogue.rsw#Inside the Rogue Guild#
-mag_dun02.rsw#Nogg Road#
-mag_dun01.rsw#Nogg Road#
+mag_dun03.rsw#Nogg Road 3F#
+mag_dun02.rsw#Nogg Road 2F#
+mag_dun01.rsw#Nogg Road 1F#
 yuno_fild04.rsw#El Mes Plateau#
 yuno_fild03.rsw#El Mes Plateau#
 yuno_fild02.rsw#Kiel Hyre's Cottage#
@@ -482,6 +533,8 @@ tur_dun03.rsw#Good Turtles Village#
 tur_dun04.rsw#Turtle Palace#
 tur_dun05.rsw#Underground swamp zone#
 tur_dun06.rsw#Underground swamp zone#
+guild_vs5.rsw#Guild Arena#
+guild_vs4.rsw#Guild Arena#
 guild_vs3.rsw#Guild Arena#
 guild_vs2.rsw#Guild Arena#
 guild_vs1.rsw#Guild Arena#
@@ -606,23 +659,23 @@ gef_dun00.rsw#Geffen Dungeon#
 gef_dun01.rsw#Geffen Dungeon#
 gef_dun02.rsw#Geffenia#
 gef_dun03.rsw#Geffenia#
-iz_dun00.rsw#Undersea Tunnel#
-iz_dun01.rsw#Undersea Tunnel#
-iz_dun02.rsw#Undersea Tunnel#
-iz_dun03.rsw#Undersea Tunnel#
-iz_dun04.rsw#Undersea Tunnel#
-
-in_sphinx1.rsw#Sphinx#
-in_sphinx2.rsw#Sphinx#
-in_sphinx3.rsw#Sphinx#
-in_sphinx4.rsw#Sphinx#
-in_sphinx5.rsw#Sphinx#
-moc_pryd01.rsw#Inside Pyramid#
-moc_pryd02.rsw#Inside Pyramid#
-moc_pryd03.rsw#Inside Pyramid#
-moc_pryd04.rsw#Inside Pyramid#
-moc_pryd05.rsw#Inside Pyramid#
-moc_pryd06.rsw#Inside Pyramid#
+iz_dun00.rsw#Undersea Tunnel 1F#
+iz_dun01.rsw#Undersea Tunnel 2F#
+iz_dun02.rsw#Undersea Tunnel 3F#
+iz_dun03.rsw#Undersea Tunnel 4F#
+iz_dun04.rsw#Undersea Tunnel 5F#
+//iz_dun05.rsw#Undersea Tunnel 6F#
+in_sphinx1.rsw#Sphinx B1F#
+in_sphinx2.rsw#Sphinx B2F#
+in_sphinx3.rsw#Sphinx B3F#
+in_sphinx4.rsw#Sphinx B4F#
+in_sphinx5.rsw#Sphinx B5F#
+moc_pryd01.rsw#Inside Pyramid 1F#
+moc_pryd02.rsw#Inside Pyramid 2F#
+moc_pryd03.rsw#Inside Pyramid 3F#
+moc_pryd04.rsw#Inside Pyramid 4F#
+moc_pryd05.rsw#Inside Pyramid B1F#
+moc_pryd06.rsw#Inside Pyramid B2F#
 moc_prydb1.rsw#Thief Guild#
 mjo_dun01.rsw#Mjolnir Dead Pit#
 mjo_dun02.rsw#Mjolnir Dead Pit#
@@ -698,6 +751,7 @@ pay_arche.rsw#Archer Village#
 payon.rsw#Payon Town#
 payon_in01.rsw#Inside Payon#
 payon_in02.rsw#Inside Payon#
+payon_in03.rsw#Inside Payon#
 prontera.rsw#Prontera City, Capitol of Rune-Midgarts#
 prt_in.rsw#Inside Prontera#
 prt_castle.rsw#Prontera Castle#
@@ -819,189 +873,3 @@ pvp_y_6-5.rsw#PvP : Room Morroc#
 pvp_y_7-5.rsw#PvP : Room Morroc#
 pvp_y_8-5.rsw#PvP : Room Morroc#
 pvp_2vs2.rsw#PvP : Event Coliseum#
-
-eque_qsch01.rsw#Okolnir#
-auction_03.rsw#Kafra Mail Annex#
-2007rwc_01.rsw#2007 USRC Arena#
-2007rwc_02.rsw#2007 USRC Arena#
-2007rwc_03.rsw#2007 USRC Arena#
-2007rwc_04.rsw#2007 USRC Arena#
-2007rwc_05.rsw#2007 USRC Arena#
-2007rwc_06.rsw#2007 USRC Arena#
-2007rwc_07.rsw#2007 USRC Arena#
-2007rwc_08.rsw#2007 USRC Arena#
-06guild_r.rsw#Guild War Arena - Waiting Room#
-06guild_01.rsw#Guild War Arena#
-06guild_02.rsw#Guild War Arena#
-06guild_03.rsw#Guild War Arena#
-06guild_04.rsw#Guild War Arena#
-06guild_05.rsw#Guild War Arena#
-06guild_06.rsw#Guild War Arena#
-06guild_07.rsw#Guild War Arena#
-06guild_08.rsw#Guild War Arena#
-
-evt_hello.rsw#Dead Angel's landing#
-evt_xmas.rsw#Toy Factory#
-
-//---------- Halloween 2008 ----
-evt_zombie.rsw#Run_From_Zombies#
-
-iz_dun00t.rsw#Overlook Water Dungeon#
-iz_dun01t.rsw#Overlook Water Dungeon#
-iz_dun02t.rsw#Overlook Water Dungeon#
-iz_dun03t.rsw#Overlook Water Dungeon#
-iz_dun04t.rsw#Overlook Water Dungeon#
-que_god01t.rsw#Quest Map#
-
-ayothaya_e.rsw#Ayothaya Excavation Site#
-louyang_e.rsw#Louyang Excavation Site#
-morocc_mem.rsw#Memory of Morroc#
-payon_mem.rsw#Memory of Payon#
-moc_paraup.rsw#Inside of Paradise Group Building in Morroc 2nd floor#
-
-//공성전 TE 복사맵 
-te_prt_gld.rsw#Gloria#
-te_prtcas01.rsw#Gaebolg#
-te_prtcas02.rsw#Richard#
-te_prtcas03.rsw#Wigner#
-te_prtcas04.rsw#Heine#
-te_prtcas05.rsw#Nerious#
-teg_dun01.rsw#Subterranean Guild Dungeon#
-te_alde_gld.rsw#Kafragarten#
-te_aldecas1.rsw#Leilah#
-te_aldecas2.rsw#Pavianne#
-te_aldecas3.rsw#Jasmine#
-te_aldecas4.rsw#Roxie#
-te_aldecas5.rsw#Curly Sue#
-teg_dun02.rsw#Subterranean Guild Dungeon#
-
-//고성메모리얼던전
-gl_cas02_.rsw#2nd Hall#
-gl_chyard_.rsw#Churchyard#
-2@gl_k.rsw#1st floor of Old Glast Heim Chivalry#
-1@gl_k.rsw#2nd floor of Old Glast Heim Chivalry#
-
-//Hero's trail
-1@face.rsw#Faceworm's Nest#
-1@sara.rsw#Sara's Memory#
-dali.rsw#Dimensional Gap#
-
-//영웅의흔적
-dali02.rsw#Dimensional Gap#
-1@tnm1.rsw#Masin Tower Top floor#
-1@tnm2.rsw#Masin Tower Top floor#
-1@tnm3.rsw#Morocc Castle's basement#
-1@ge_st.rsw#Geffen Magic  Competition#
-1@gef.rsw#Geffen Magic  Competition#
-1@gef_in.rsw#Geffen Magic  Competition#
-1@spa.rsw#Palace of Ghost#
-
-1@def01.rsw#Wave Dungeon - forest#
-
-//시계탑나이트메어던전
-c_tower2_.rsw#Clock Town of twisted time 2nd floor#
-c_tower3_.rsw#Clock Town of twisted time 3rd floor#
-
-//EP.14.3
-moro_vol.rsw#Flame Basin#
-moro_cav.rsw#Flame cave#
-1@dth1.rsw#Bios Island#
-1@dth2.rsw#Bios Island#
-1@dth3.rsw#Bios Island#
-1@rev.rsw#Mors Cave#
-1@eom.rsw#Masin war#
-1@jtb.rsw#Jitterbug of Nightmare#
-
-// 영웅의 흔적3
-1@glast.rsw#Old Glastheim#
-1@air1.rsw#Aircraft#
-1@air2.rsw#Aircraft#
-
-// ep15.1 판타스마고리카
-ver_eju.rsw#Yuperos Eastern Ruin#
-ver_tunn.rsw#Verus Outter tunnel#
-verus04.rsw#Verus Findspot#
-verus03.rsw#Verus Center Square#
-
-1@mcd.rsw#Charlston Factory#
-
-// ep15.2 판타스마고리카
-verus01.rsw#Lab-OPTATIO#
-verus02.rsw#R&D-WISH#
-un_bk_q.rsw#Under Bunker#
-un_bunker.rsw#Under Bunker#
-un_myst.rsw#Under Tunnel#
-1@uns.rsw#The Last Room#
-1@lab.rsw#Center Lab#
-1@xm_d.rsw#Horror Toy Factory#
-
-lasagna.rsw#Port city of Lasagna#
-lasa_fild01.rsw#Ravioli Plain Watch#
-lasa_fild02.rsw#Ravioli Forest#
-lasa_dun01.rsw#Dragon's Nest#
-lasa_dun02.rsw#Dragon's Nest#
-lasa_dun03.rsw#Dragon's Nest#
-conch_in.rsw#Inside the Kon-Kilina#
-lasa_in01.rsw#Inside Lasagna#
-lasa_dun_q.rsw#Dragon's Nest#
-
-//-- 최종갱신 오후 3:58 2015-02-23 본서버
-
-// ep16.1 영웅을 위한 연회 + 프론테라 리뉴얼
-1@mir.rsw#Ritual Room#
-2@mir.rsw#Ritual Room#
-1@sthb.rsw#Inside Air Portress#
-1@sthc.rsw#Secret Room Air Portress#
-1@sthd.rsw#Top Floor Air Portress#
-
-prt_cas.rsw#Prontera Center Palace#
-prt_cas_q.rsw#Prontera Royal Villa#
-prt_prison.rsw#Prontera Underground Prison#
-prt_lib.rsw#Royal Memory#
-prt_lib_q.rsw#Old Memoir of Royal Family#
-prt_q.rsw#Prontera Invasion#
-prt_pri00.rsw#Prontera Prison#
-
-
-har_in01.rsw#Rock Ridge#
-harboro1.rsw#Rock Ridge#
-harboro2.rsw#Culvert#
-rockmi1.rsw#Rock Ridge Mine#
-rockmi2.rsw#Rock Ridge Mine#
-rockrdg1.rsw#Kiwawa Desert#
-rockrdg2.rsw#Kiwawa Desert#
-
-// 생체던전 신규맵 오전 2013-12-18
-lhz_dun_n.rsw#The Bed of Honor#
-
-// 16.2 (추카 컨텐츠 없음)
-1@slw.rsw#Werner_Laboratory central_room#
-1@swat.rsw#Heart_Hunter War_Base#
-que_swat.rsw#Heart_Hunter War_Base#
-slabw01.rsw#Werner Laboratory#
-rebel_in.rsw#Clana Nemieri#
-
-// Illusion - Payon (Moonlight)
-pay_d03_i.rsw#Nightmare_of_the_Moonlight_Flower#
-
-// Illusion - Geffen (vampire)
-gef_d01_i.rsw#250 Page#
-
-1@jtb.rsw#The Shadowed Dream#
-
-//Episode 17.1 Quickening, Illusion 
-1@cor.rsw#Cor Memorial#
-1@os_a.rsw#Os Occupation#
-1@os_b.rsw#Blockaded Os#
-1@rgsr.rsw#Regenschirm#
-rgsr_in.rsw#Regenschirm Laboratory#
-pub_cat.rsw#Cat on a Bullet#
-sp_cor.rsw#Special Security Area, Cor#
-sp_os.rsw#Special Security Area, Os#
-sp_rudus.rsw#Laboratory Waste Disposal Plant Rudus Floor 1#
-sp_rudus2.rsw#Laboratory Waste Disposal Plant Rudus Floor 2#
-sp_rudus3.rsw#Laboratory Waste Disposal Plant Rudus Floor 3#
-
-// Nov Hunt Event
-hu_fild03.rsw#Main Camp#
-prt_evt_in.rsw#Shack on Ground#
