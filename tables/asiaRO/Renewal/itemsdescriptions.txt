@@ -49835,15 +49835,9 @@ Required Job: All Jobs
 Restores ^0080001000^000000 HP.
 #
 11565#
-^808080A potion (WoE Version) made from ground White Herbs.^000000
-^FFFFFF_^000000
-^FF0000Can only be put in Storage.^000000
-^FFFFFF_^000000
-Type: Consumable
-Class: Recovery
-Weight: 15
-^FFFFFF_^000000
-Restores ^008000325^000000 to ^008000405^000000 HP.
+^ff0000This item cannot be traded with other accounts.^000000
+A potion made from ground White Herbs. ^000088Restores about 325 HP^000000.
+Weight : ^77777715^000000
 #
 11566#
 ^ff0000This item cannot be traded with other accounts.^000000
@@ -53851,7 +53845,7 @@ Weight: ^7777770^000000
 A manual that get Extra 25% Job Exp during 30 minutes
 Can be duplicated with Battle Manual.
 ^ffffff_^000000
-Weight : ^7777771^000000
+Weight : ^7777770^000000
 #
 12767#
 A box containing 20 Aigenta Tickets.
@@ -70534,8 +70528,8 @@ Usable By: ^777777Ninja Class^000000
 Weight: ^7777771^000000
 #
 17159#
+^ff0000This item cannot be traded with other account^000000
 A box that contains 1Name Change Coupon
-^ff0000This box can be traded, stored and vended. Once opened the item inside is account bound.^000000
 Use this item to change your character's name on the Character Select menu.
 After using this item you must logout to the Character Select menu and Right-Click on your character and choose 'Change Name'
 You can then enter a new name as long as it is not already taken.
@@ -74563,19 +74557,13 @@ Level Requirement: ^7777771^000000
 Job: ^777777All^000000
 #
 18740#
-^808080His ascension was like the flashing of light,^000000
-^808080His plumage was beauteous and his presence ravishing.^000000
-^808080Only death awaits those who've seen it.^000000
-^FFFFFF_^000000
-^FF6633[Item Function] ^000000
-This costume can be enchanted at Eden 2nd floor with NPC Costama Girl (Located on 33, 185)
-^FFFFFF_^000000
-Type: ^777777Costume^000000
-Defense: ^7777770^000000
-Position: ^777777Upper ^000000
-Weight: ^7777770^000000
-Required Level: ^7777771^000000
-Job: ^777777All Jobs^000000 
+A hair inspired by certain race whose hair changes when they exceed their limits.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 4.^000000
+Class : ^777777Costume^000000 Defense : ^7777770^000000
+Location : ^777777Upper ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 18741#
 To feel the fear of those who see in the eerie paranormal.
@@ -80082,11 +80070,14 @@ Required Level: ^7777771^000000
 Job: ^777777All^000000
 #
 19815#
-A ten gallon hat that goes well with Lolita fashion
-Class: ^777777Costume^000000
-Location: ^777777Upper ^000000Weight: ^7777770^000000
-Required Level: ^7777771^000000
-Job: ^777777All^000000
+Ten Gallon Hat decorated with sweet pink lace.
+Wearer can look cool and fashionable on hot summer season.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 4.^000000
+Class : ^777777Costume^000000
+Location : ^777777Upper ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 19816#
 ^808080A hat made from a Chocobo. It's yellow and soft and makes the wearer look cute.^000000
@@ -82613,14 +82604,14 @@ Required Level: 1
 Required Job: All Jobs
 #
 20266#
-^808080You'd never guess where the rabbit came from...^000000
-^ffffff_^000000
-Class: ^777777Costume^000000
-Defense: ^7777770^000000
-Location: ^777777Upper^000000
-Weight: ^7777770^000000
-Required Level: ^7777771^000000
-Job: ^777777All^000000
+You should not find out what is inside the zipper.
+Some sort of Rabbit creature was seen from the zipper.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 4.^000000
+Class : ^777777Costume^000000 Defense : ^7777770^000000
+Location : ^777777Upper ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 20267#
 A cap made to resemble a cute penguin. Supposedly, it was made in Galapago's image.
@@ -82630,15 +82621,14 @@ Required Level: ^7777771^000000
 Job: ^777777All jobs^000000
 #
 20268#
-^808080A sleepy Eclipse with his family. Your head will stay fluffy and warm.^000000
-^FFFFFF_^000000
-Type: Costume
-Position: Upper
-Weight: 0
-Required Level: 1
-Required Job: All Jobs
-^FFFFFF_^000000
-^FFFFFF<NAVI>^4D4DFF[Lace La Zard]^000000<INFO>mal_in01,20,107,0,100,0,0</INFO></NAVI>^000000
+A costume decorated with sleepy Eclipse and its family.
+Wearer will stay fluffy and warm.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 4.^000000
+Class : ^777777Costume^000000 Defense : ^7777770^000000
+Location : ^777777Upper ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 20271#
 Peculiar headgear designed to look like a sunflower.
@@ -82742,13 +82732,14 @@ Required Level: 1
 Required Job: All Jobs
 #
 20286#
-^808080Glasses rimmed under the lens only. They fit any type of style nicely, whether cool or cute.^000000
-^FFFFFF_^000000
-Type: Costume
-Position: Headgear (Lower)
-Weight: 0
-Required Level: 1
-Required Job: All Jobs
+Under rimmed glasses that satisfy both design and durability.
+The design is suitable for 2D world.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 5.^000000
+Class : ^777777Costume^000000 Defense : ^7777770^000000
+Location : ^777777Middle ^000000Weight: ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 20287#
 ^808080A hat resembling the hairdo of man who always looks for someone to fight with.^000000
@@ -82849,14 +82840,14 @@ Required Level: 1
 Required Job: All Jobs
 #
 20300#
-A mask resembling a head of Hill Wind inhabiting the fields of Rachel. Surprisingly, this complicated expression seems to be popular.
---------------------
-Class: ^777777Headgear^000000
-Location: ^777777Upper & Middle & Lower^000000
-Defense: ^7777770^000000
-Weight: ^7777770^000000
-Required Level: ^7777771^000000
-Jobs: ^777777All^000000
+A costume resembles a head of Hill Wind inhabiting in Rachel fields.
+Surprisingly, this complicated expression seems to be popular.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 5.^000000
+Class : ^777777Costume^000000 Defense : ^7777770^000000
+Location : ^777777Upper, Middle, Lower ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 20301#
 ^808080A Savage Babe doll dyed with gold. It is a pretty doll but makes you feel hunger when you look at it.^000000
@@ -83103,26 +83094,23 @@ Required Level: ^7777771^000000
 Jobs: ^777777Dancer^000000
 #
 20329#
-^808080There are no worries in the world when you are wearing this on your head.^000000
-^FFFFFF_^000000
-Type: Costume
-Position: Upper
-Weight: 0
-Required Level: 1
-Required Job: All Jobs
-^FFFFFF_^000000
-^FFFFFF<NAVI>^4D4DFF[Lace La Zard]^000000<INFO>mal_in01,20,107,0,100,0,0</INFO></NAVI>^000000
+Combination of cute stuff in the world.
+There are no worries in the world when you are wearing this on your head.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 5.^000000
+Class : ^777777Costume^000000 Defense : ^7777770^000000
+Location : ^777777Upper ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 20330#
-^808080A traditional Mexican hat with a wide round brim.^000000
-^FFFFFF_^000000
-Type: Costume
-Position: Upper
-Weight: 0
-Required Level: 1
-Required Job: All Jobs
-^FFFFFF_^000000
-^FFFFFF<NAVI>^4D4DFF[Lace La Zard]^000000<INFO>mal_in01,20,107,0,100,0,0</INFO></NAVI>^000000
+A traditional costume from a hot region with a wide round brim.
+^ffffff<NAVI>^4D4DFF[Designer Heidam]^000000<INFO>mal_in01,20,124,0,100,0,0</INFO></NAVI>^000000
+^b4b4b4Exchangeable for Costume Enchantment Stone Box 4.^000000
+Class : ^777777Costume^000000
+Location : ^777777Upper ^000000Weight : ^7777770^000000
+Required Level : ^7777771^000000
+Jobs : ^777777All Jobs^000000
 #
 20331#
 ^00CC00This 2 Week Rental Box contains 1 Item.  The box is Tradable, but the item that comes out of it may not be. Please read the description.^000000
@@ -88120,12 +88108,10 @@ Weight: ^7777771^000000
 #
 23340#
 ^ff0000Cannot be traded.^000000
-		A trumpet shape mechanism that can be carried with hand. If you put it near your mouth when you're talking, it has the ability to send your voice further. 
-		Allows you to broadcast your speech to the server.
-		Warning - It must be used within 3 minutes or the effect will be gone.
-		Weight : ^7777771^000000
-		
-Weight: ^8080800^000000
+A trumpet shape mechanism that can be carried with hand. If you put it near your mouth when you're talking, it has the ability to send your voice further. 
+Allows you to broadcast your speech to the server.
+Warning - It must be used within 3 minutes or the effect will be gone.
+Weight : ^7777771^000000
 #
 23342#
 Confidentail Special Document from Shopaholic Girl.
@@ -88361,6 +88347,13 @@ Weight : ^7777771^000000
 #
 23505#
 A box contains 20 [Not for Sale] Yellow Potions
+Perfect for taking out whenever you need it.
+"^ff0000Caution - Items may be lost if you've exceeded the weight or carrying amount when you open the box!^000000"
+
+Weight : ^7777770^000000
+#
+23506#
+A box contains 20 [Not for Sale] White Potions
 Perfect for taking out whenever you need it.
 "^ff0000Caution - Items may be lost if you've exceeded the weight or carrying amount when you open the box!^000000"
 

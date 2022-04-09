@@ -4926,7 +4926,7 @@
 11558#TE White Slim Potion#
 11563#Hot Tea#
 11564#Sweet Canape#
-11565#WoE White Potion#
+11565#[Not For Sale] White Potion#
 11566#[Not For Sale] Yellow Potion#
 11572#Blue Potion#
 11573#White Slim Potion#
@@ -7008,7 +7008,7 @@
 18736#Unknown request#
 18737#Tinder Mask#
 18739#카네이션 머리띠#
-18740#Costume Hair Of The Strong#
+18740#Costume Hair of Strong#
 18741#도깨비 불#
 18742#Costume Moon and Stars#
 18743#Costume Chungha#
@@ -7507,7 +7507,7 @@
 19812#의상 커다란 하이비스커스#
 19813#의상 아이스크림 모자#
 19814#의상 눈부신 가발#
-19815#Costume Lolita Tengallon Hat#
+19815#Costume Lolita Ten Gallon Hat#
 19816#Costume Chocobo Cap#
 19817#Costume Ifrits Breath#
 19818#Costume Inncanation of Demon#
@@ -7777,9 +7777,9 @@
 20250#Costume Hair of Strong White#
 20253#Costume Alicel's Doll#
 20255#Costume Love Cheeks#
-20266#Costume Zup Zip Bunny#
+20266#Costume Secret Zipper#
 20267#Costume: Penguin Cap#
-20268#의상 잠자는 이클립스 가족#
+20268#Costume Sleep Eclipse Family#
 20271#Costume Sunflower#
 20273#Costume Soft Sheep Hat#
 20277#Costume Balloon Hat#
@@ -7791,7 +7791,7 @@
 20283#의상 오버프로텍터#
 20284#의상 벚꽃모자#
 20285#의상 흩날리는 벚꽃#
-20286#의상 빨간 언더림 안경#
+20286#Costume Red Under Rimmed Glasses#
 20287#의상 금색 남자의 훈장#
 20289#Costume Black Wing Ears#
 20290#Costume Evil Druid Hat#
@@ -7824,8 +7824,8 @@
 20326#Costume Sailor Collar#
 20327#의상 마린 캡#
 20328#의상 입에 문 황금 물고기#
-20329#(null)#
-20330#(null)#
+20329#Costume Very Cute Doll Hat#
+20330#Costume Sombrero#
 20331#의상 사막의 왕자#
 20332#의상 숙녀의 리본#
 20333#의상 패밀리 모자#
@@ -8271,6 +8271,7 @@
 23472#Mofu Egg TH2#
 23475#Infinity Drink#
 23505#[Not For Sale] Yellow Potion 20 Box#
+23506#[Not For Sale] White Potion 20 Box#
 23515#Daily Battle Manual#
 23539#Daily Life Insurance#
 23540#Daily Kafra Card#
