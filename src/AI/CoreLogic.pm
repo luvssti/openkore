@@ -2614,7 +2614,7 @@ sub processSitAuto {
 
 	# Sit if we're not already sitting
 	if ($action eq "sitAuto" && !$char->{sitting} && ($char->{skills}{NV_BASIC}{lv} >= 3 || $char->{skills}{SU_BASIC_SKILL}{lv} == 1) &&
-	    !ai_getAggressives() && ($weight < 50 || $config{'sitAuto_over_70'})) {
+	    !ai_getAggressives() && ($weight < 70 || $config{'sitAuto_over_70'})) {
 		debug "sitAuto - sit\n", "sitAuto";
 		sit();
 
