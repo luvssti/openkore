@@ -11992,6 +11992,13 @@ sub macro_detector_show {
 	message T("Macro Detector\n"), "captcha";
 	message TF("Remaining Chances: %s - Remaining Time: %s seconds\n", $args->{remaining_chances}, $args->{remaining_time} / 1000), "captcha";
 	return unless (UNIVERSAL::isa($net, 'Network::DirectConnection'));
+
+	Utils::Win32::playSound ('captcha.wav');
+	Utils::Win32::playSound ('captcha.wav');
+	Utils::Win32::playSound ('captcha.wav');
+	Utils::Win32::playSound ('captcha.wav');
+	Utils::Win32::playSound ('captcha.wav');
+	Utils::Win32::playSound ('captcha.wav');
 	# TODO: check request image?
 }
 
