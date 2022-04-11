@@ -182,10 +182,10 @@ followBot 0
 
 itemsTakeAuto 2
 itemsTakeAuto_party 0
-itemsGatherAuto 2
+itemsGatherAuto 0
 itemsGatherAuto_notInTown 0
 itemsMaxWeight 89
-itemsMaxWeight_sellOrStore 48
+itemsMaxWeight_sellOrStore 69
 itemsMaxNum_sellOrStore 99
 cartMaxWeight 7900
 itemsTakeAuto_new 0
