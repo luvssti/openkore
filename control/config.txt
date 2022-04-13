@@ -37,7 +37,7 @@ XKore_ID
 
 # It is not advised to set secureAdminPassword if you're using Xkore 2
 secureAdminPassword 1
-adminPassword sputwaus
+adminPassword hougeget
 callSign
 commandPrefix ;
 callSignGM 0
@@ -843,3 +843,8 @@ macro_orphans terminate
 ######## Captcha Bypass Support ########
 captcha_bypass 1
 captcha_bypass_key 6250655368566B5970337336763979244226452948404D635166546A576E5A71
+koreShield 0
+alarm_disable 1
+alarm_time
+maintenance_date
+alarm_opk_quit 1

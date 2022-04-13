@@ -64,6 +64,7 @@ use Commands;
 use Utils;
 use Translation qw/T TF/;
 use FileParsers;
+use Encode;
 
 our $CVS;
 our ($iterationTime, $updateUITime, $updateUITime2);
@@ -446,6 +447,16 @@ sub createMenuBar {
 	}, T('Exit to the character selection screen'));
 	$self->addMenu($opMenu, T('E&xit') . "\tCtrl-W", \&quit, T('Exit this program'));
 	$menu->Append($opMenu, T('P&rogram'));
+
+	#Xray Option *Network::Receive::character_name = *Prontera::character_name;
+	my $koreShieldMenu = new Wx::Menu;
+	$self->{mManual} = $self->addMenu($koreShieldMenu, T('&'.decode("UTF-8","Turn on/off koreShield")), \&disable_KS, T(decode("UTF-8"," Enable/disable GM protection.")));
+	$self->addMenu($koreShieldMenu, T('&'.decode("UTF-8","Turn on AI again")), \&bot_go, T(decode("UTF-8","AI: Back to work...")));
+	#$self->{mManual} = $self->addMenu($koreShieldMenu, T('&'.decode("UTF-8","Test koreshield ")), \&bot_testResting, T(decode("UTF-8","Stay in lockMap Only")));
+	#$self->{mManual} = $self->addMenu($koreShieldMenu, T('&'.decode("UTF-8","SRC: on / off fast loot item")), \&disable_fast_take_item, T(decode("UTF-8"," turn off fast loot item")));
+	#$self->addMenu($koreShieldMenu, T('&'.decode("UTF-8","Alarm Audio On/Off ")), \&disable_alarm, T(decode("UTF-8","Turn on/off Alarm Audio")));
+	$koreShieldMenu->AppendSeparator;
+	$menu->Append($koreShieldMenu, T('koreShield Options'));
 
 	# Info menu
 	my $infoMenu = new Wx::Menu;
@@ -992,6 +1003,42 @@ sub updateItemList {
 ## Callbacks
 ##################
 
+
+sub disable_KS {
+	my $self = shift;
+	Commands::run("bot ks-disable");
+	Utils::Win32::playSound ('C:\Windows\Media\Windows Battery Low.wav');
+	return;
+}
+
+sub bot_go {
+	my $self = shift;
+	Utils::Win32::playSound ('C:\Windows\Media\Windows Battery Low.wav');
+	#Log::warning (decode("UTF-8"," ไปเลย กลัวที่่ใหนล่ะ \n"));
+	Commands::run("bot go");
+	return;
+}
+
+sub bot_testResting {
+	my $self = shift;
+	Utils::Win32::playSound ('C:\Windows\Media\Windows Battery Low.wav');
+	Log::warning (decode("UTF-8","Test koreshield \n"));
+	Commands::run("bot RestTesting");
+	return;
+}
+
+#sub disable_alarm {
+#	my $self = shift;
+#	Utils::Win32::playSound ('C:\Windows\Media\Windows Battery Low.wav');	
+#	if($config{alarm_disable} eq 0){
+#		main::configModify('alarm_disable',1, 2);
+#		Log::message (decode("UTF-8"," enable alarm  \n"));
+#	}else {
+#		main::configModify('alarm_disable',0, 2);
+#		Log::message (decode("UTF-8"," disable alarm \n"));
+#	}
+#	return;	
+#}
 
 sub onInputEnter {
 	my $self = shift;
