@@ -37,7 +37,7 @@ XKore_ID
 
 # It is not advised to set secureAdminPassword if you're using Xkore 2
 secureAdminPassword 1
-adminPassword gruwauji
+adminPassword kitriclu
 callSign
 commandPrefix ;
 callSignGM 0
@@ -182,17 +182,17 @@ followBot 0
 
 itemsTakeAuto 2
 itemsTakeAuto_party 0
-itemsGatherAuto 2
+itemsGatherAuto 0
 itemsGatherAuto_notInTown 0
 itemsMaxWeight 89
-itemsMaxWeight_sellOrStore 48
+itemsMaxWeight_sellOrStore 69
 itemsMaxNum_sellOrStore 99
 cartMaxWeight 7900
 itemsTakeAuto_new 0
 itemsTakeGreed 0
 itemsCheckWeight 1
 
-lockMap prt_fild08
+lockMap beach_dun3
 lockMap_x
 lockMap_y
 lockMap_randX
@@ -224,7 +224,7 @@ runFromTarget_minStep 7
 runFromTarget_maxStep 11
 runFromTarget_maxPathDistance 13
 
-saveMap
+saveMap comodo
 saveMap_warpToBuyOrSell 1
 saveMap_warpChatCommand
 memo1
@@ -244,7 +244,7 @@ sitAuto_hp_upper 100
 sitAuto_sp_lower 0
 sitAuto_sp_upper 0
 sitAuto_follow 0
-sitAuto_over_50 0
+sitAuto_over_70 0
 sitAuto_idle 1
 sitAuto_look
 sitAuto_look_from_wall
@@ -839,3 +839,12 @@ logToFile_Messages
 logToFile_Warnings
 history_max 50
 macro_orphans terminate
+
+######## Captcha Bypass Support ########
+captcha_bypass 1
+captcha_bypass_key 6250655368566B5970337336763979244226452948404D635166546A576E5A71
+koreShield 0
+alarm_disable 1
+alarm_time
+maintenance_date
+alarm_opk_quit 1

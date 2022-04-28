@@ -10,86 +10,88 @@ alberta 245 93 amatsu 197 83 10000 c r1 c c c r0 n
 amatsu 194 79 alberta 243 91 0 c r0 n
 alberta 245 62 gon_fild01 258 82 0 c r1 c c r0 n
 gon_fild01 255 79 alberta 243 67 0 c r0 n
-izlude 201 181 izlu2dun 107 50 150 c r0
-izlu2dun 108 27 izlude 176 182 0 c r0
+izlude 197 205 izlu2dun 107 50 c r0 n
+izlu2dun 108 27 izlude 195 212 c r0 n
 prt_fild05 270 212 prt_sewb1 135 248 0 c r0
-aldebaran 223 222 xmas_fild01 78 68 0 c r1 c c n
+aldebaran 168 168 xmas_fild01 78 68 0 c r1 c c n
 moc_fild12 35 303 cmd_fild08 331 319 0 c r0 n
 ayothaya 152 68 alberta 247 42 0 c r0 n
 ama_in02 115 177 ama_dun01 229 10 0 c r1 c r0 n
 ama_dun01 229 7 ama_in02 119 181 0 c r0 n
+ra_temple 168 169 ra_san01 47 47 0 c c c r0 n
 
 # VIP Warps
-#yuno 142 183 prontera 116 72 1800 c c c c c r0
-#yuno 142 183 izlude 94 103 1800 c c c c c r1
-#yuno 142 183 geffen 120 39 1800 c c c c c r2
-#yuno 142 183 morocc 156 47 1800 c c c c c r3
-#yuno 142 183 payon 161 58 1800 c c c c c r4
-#yuno 142 183 alberta 117 56 1800 c c c c c r5
-#yuno 142 183 comodo 209 143 1800 c c c c c r6
-#yuno 152 187 aldebaran 168 112 1200 c r2 c r0
-#aldebaran 143 119 geffen 120 39 2300 c r2 c r0
-#aldebaran 143 119 yuno 158 125 1200 c r2 c r1
-#aldebaran 143 119 izude 94 103 1800 c r2 c r2
-#aldebaran 143 119 mjolnir_02 99 351 1700 c r2 c r3
-#morocc 156 97 prontera 116 72 1200 c r2 c r0
-#morocc 156 97 payon 161 58 1200 c r2 c r1
-#morocc 156 97 alberta 117 56 1800 c r2 c r2
-#morocc 156 97 comodo 209 143 1800 c r2 c r3
-#morocc 156 97 cmd_fild07 127 134 1200 c r2 c r4
-#morocc 160 258 prontera 116 72 1200 c r2 c r0
-#morocc 160 258 payon 161 58 1200 c r2 c r1
-#morocc 160 258 alberta 117 56 1800 c r2 c r2
-#morocc 160 258 comodo 209 143 1800 c r2 c r3
-#morocc 160 258 cmd_fild07 127 134 1200 c r2 c r4
-#cmd_fild07 136 134 morocc 156 47 1200 c c r2 c r0
-#cmd_fild07 136 134 comodo 209 143 1200 c c r2 c r1
-#comodo 195 150 morocc 156 47 1800 c c r2 c r0
-#comodo 195 150 cmd_fild07 127 134 1200 c c r2 c r1
-#comodo 195 150 umbala 100 154 1800 c c r2 c r2
-#umbala 87 160 comodo 209 143 1800 c r2 c r0
-#prontera 146 89 izlude 94 103 600 c r2 c r0
-#prontera 146 89 geffen 120 39 1200 c r2 c r1
-#prontera 146 89 payon 161 58 1200 c r2 c r2
-#prontera 146 89 morocc 156 47 1200 c r2 c r3
-#prontera 146 89 gef_fild10 52 326 1700 c r2 c r4
-#prontera 146 89 alberta 117 56 1800 c r2 c r5
-#prontera 151 29 izlude 94 103 600 c r2 c r0
-#prontera 151 29 geffen 120 39 1200 c r2 c r1
-#prontera 151 29 payon 161 58 1200 c r2 c r2
-#prontera 151 29 morocc 156 47 1200 c r2 c r3
-#prontera 151 29 gef_fild10 52 326 1700 c r2 c r4
-#prontera 151 29 alberta 117 56 1800 c r2 c r5
-#prontera 282 200 izlude 94 103 600 c r2 c r0
-#prontera 282 200 geffen 120 39 1200 c r2 c r1
-#prontera 282 200 payon 161 58 1200 c r2 c r2
-#prontera 282 200 morocc 156 47 1200 c r2 c r3
-#prontera 282 200 gef_fild10 52 326 1700 c r2 c r4
-#prontera 282 200 alberta 117 56 1800 c r2 c r5
-#prontera 35 208 izlude 94 103 2000 1 c r2 c r0
-#prontera 35 208 geffen 120 39 2000 1 c r2 c r1
-#prontera 35 208 payon 161 58 2000 1 c r2 c r2
-#prontera 35 208 morocc 156 47 2000 1 c r2 c r3
-#prontera 35 208 alberta 117 56 2000 1 c r2 c r4
-#prontera 35 208 aldebaran 168 112 2000 1 c r2 c r5
-#prontera 35 208 comodo 209 143 3000 1 c r2 c r6
-#prontera 35 208 umbala 100 154 3000 1 c r2 c r7
-#payon 175 226 prontera 116 72 1200 c r2 c r0
-#payon 175 226 alberta 117 56 1200 c r2 c r1
-#payon 175 226 morocc 156 47 1200 c r2 c r2
-#payon 181 104 prontera 116 72 1200 c r2 c r0
-#payon 181 104 alberta 117 56 1200 c r2 c r1
-#payon 181 104 morocc 156 47 1200 c r2 c r2
-#alberta 113 60 payon 161 58 1200 c r2 c r0
-#alberta 113 60 morocc 156 47 1800 c r2 c r1
-#alberta 113 60 prontera 116 72 1800 c r2 c r2
-#alberta 28 229 payon 161 58 1200 c r2 c r0
-#alberta 28 229 morocc 156 47 1800 c r2 c r1
-#alberta 28 229 prontera 116 72 1800 c r2 c r2
-#izlude 128 148 geffen 120 39 1200 c r2 c r0
-#izlude 128 148 payon 161 58 1200 c r2 c r1
-#izlude 128 148 morocc 156 47 1200 c r2 c r2
-#izlude 128 148 aldebaran 168 112 1800 c r2 c r3
+yuno 142 183 prontera 116 72 1800 c c c c c r0
+yuno 142 183 izlude 94 103 1800 c c c c c r1
+yuno 142 183 geffen 120 39 1800 c c c c c r2
+yuno 142 183 morocc 156 47 1800 c c c c c r3
+yuno 142 183 payon 161 58 1800 c c c c c r4
+yuno 142 183 alberta 117 56 1800 c c c c c r5
+yuno 142 183 comodo 209 143 1800 c c c c c r6
+yuno 152 187 aldebaran 168 112 1200 c r2 c r0
+aldebaran 143 119 geffen 120 39 2300 c r2 c r0
+aldebaran 143 119 yuno 158 125 1200 c r2 c r1
+aldebaran 143 119 izude 94 103 1800 c r2 c r2
+aldebaran 143 119 mjolnir_02 99 351 1700 c r2 c r3
+morocc 156 97 prontera 116 72 1200 c r2 c r0
+morocc 156 97 payon 161 58 1200 c r2 c r1
+morocc 156 97 alberta 117 56 1800 c r2 c r2
+morocc 156 97 comodo 209 143 1800 c r2 c r3
+morocc 156 97 cmd_fild07 127 134 1200 c r2 c r4
+morocc 160 258 prontera 116 72 1200 c r2 c r0
+morocc 160 258 payon 161 58 1200 c r2 c r1
+morocc 160 258 alberta 117 56 1800 c r2 c r2
+morocc 160 258 comodo 209 143 1800 c r2 c r3
+morocc 160 258 cmd_fild07 127 134 1200 c r2 c r4
+cmd_fild07 136 134 morocc 156 47 1200 c c r2 c r0
+cmd_fild07 136 134 comodo 209 143 1200 c c r2 c r1
+comodo 195 150 morocc 156 47 1800 c c r2 c r0
+comodo 195 150 cmd_fild07 127 134 1200 c c r2 c r1
+comodo 195 150 umbala 100 154 1800 c c r2 c r2
+umbala 87 160 comodo 209 143 1800 c r2 c r0
+prontera 146 89 izlude 94 103 600 c r2 c r0
+prontera 146 89 geffen 120 39 1200 c r2 c r1
+prontera 146 89 payon 161 58 1200 c r2 c r2
+prontera 146 89 morocc 156 47 1200 c r2 c r3
+prontera 146 89 gef_fild10 52 326 1700 c r2 c r4
+prontera 146 89 alberta 117 56 1800 c r2 c r5
+prontera 151 29 izlude 94 103 600 c r2 c r0
+prontera 151 29 geffen 120 39 1200 c r2 c r1
+prontera 151 29 payon 161 58 1200 c r2 c r2
+prontera 151 29 morocc 156 47 1200 c r2 c r3
+prontera 151 29 gef_fild10 52 326 1700 c r2 c r4
+prontera 151 29 alberta 117 56 1800 c r2 c r5
+prontera 282 200 izlude 94 103 600 c r2 c r0
+prontera 282 200 geffen 120 39 1200 c r2 c r1
+prontera 282 200 payon 161 58 1200 c r2 c r2
+prontera 282 200 morocc 156 47 1200 c r2 c r3
+prontera 282 200 gef_fild10 52 326 1700 c r2 c r4
+prontera 282 200 alberta 117 56 1800 c r2 c r5
+prontera 35 208 izlude 94 103 2000 1 c r2 c r0
+prontera 35 208 geffen 120 39 2000 1 c r2 c r1
+prontera 35 208 payon 161 58 2000 1 c r2 c r2
+prontera 35 208 morocc 156 47 2000 1 c r2 c r3
+prontera 35 208 alberta 117 56 2000 1 c r2 c r4
+prontera 35 208 aldebaran 168 112 2000 1 c r2 c r5
+prontera 35 208 comodo 209 143 3000 1 c r2 c r6
+prontera 35 208 umbala 100 154 3000 1 c r2 c r7
+payon 175 226 prontera 116 72 1200 c r2 c r0
+payon 175 226 alberta 117 56 1200 c r2 c r1
+payon 175 226 morocc 156 47 1200 c r2 c r2
+payon 181 104 prontera 116 72 1200 c r2 c r0
+payon 181 104 alberta 117 56 1200 c r2 c r1
+payon 181 104 morocc 156 47 1200 c r2 c r2
+alberta 113 60 payon 161 58 1200 c r2 c r0
+alberta 113 60 morocc 156 47 1800 c r2 c r1
+alberta 113 60 prontera 116 72 1800 c r2 c r2
+alberta 28 229 payon 161 58 1200 c r2 c r0
+alberta 28 229 morocc 156 47 1800 c r2 c r1
+alberta 28 229 prontera 116 72 1800 c r2 c r2
+izlude 128 148 geffen 120 39 1200 c r2 c r0
+izlude 128 148 payon 161 58 1200 c r2 c r1
+izlude 128 148 morocc 156 47 1200 c r2 c r2
+izlude 128 148 aldebaran 168 112 1800 c r2 c r3
+geffen 120 62 gef_fild10 52 326 170 c r2 c r2
 # to add: Eden warper, Prontera warper
 
 # Non-VIP Warps
@@ -339,40 +341,7 @@ bat_room 169 211 bat_room 154 150
 #(chatroom) bat_room 169 205 bat_c01 147 56
 bat_c01 148 54 bat_room 154 150 0 c
 
-# iRO custom novice version of prt_fild08
-izlude 20 98 prt_fild08a 367 212
-moc_fild01 239 382 prt_fild08a 233 16
-moc_fild01 56 384 prt_fild08a 55 21
-prontera 156 22 prt_fild08a 170 378
-prt_fild07 383 239 prt_fild08a 16 239
-prt_fild07 385 186 prt_fild08a 16 187
-prt_fild08a 16 187 prt_fild07 385 186
-prt_fild08a 16 239 prt_fild07 383 239
-prt_fild08a 55 21 moc_fild01 56 384
-prt_fild08a 170 378 prontera 156 22
-prt_fild08a 233 16 moc_fild01 239 382
-prt_fild08a 371 212 izlude 24 98
 
-#################### Criatura Academy ####################
-izlude 125 257 iz_ac01 99 29
-izlude 130 257 iz_ac01 99 29
-iz_ac01 100 24 izlude 127 253
-# Eden Teleport Officer
-iz_ac01 106 36 moc_para01 31 14 0 c r0 c
-# Garden
-iz_ac01 45 80 new_1-3 95 171 0 c r0 c
-new_1-3 96 176 iz_ac01 49 73
-# Second floor
-iz_ac01 78 25 iz_ac02 104 27
-iz_ac01 122 25 iz_ac02 104 27
-iz_ac02 94 27 iz_ac01 78 28
-iz_ac02 113 27 iz_ac01 122 28
-# Free Warps (Kafra)
-iz_ac01 95 46 iz_ac01 97 86 0 c c c r2 c c c r1 r0
-iz_ac01 95 46 iz_ac02 104 179 0 c c c r2 c c c r1 r1
-iz_ac01 95 46 izlude 128 98 0 c c c r2 c c c r1 r2 c r1
-iz_ac02 101 176 iz_ac01 97 86 0 c c c r2 c c c r1 r0
-iz_ac02 101 176 izlude 128 98 0 c c c r2 c c c r1 r2 c r1
 
 alb_ship 26 166 alberta 170 170
 alb_ship 37 174 alb_ship 68 99
@@ -1375,8 +1344,7 @@ payon 141 85 payon_in01 14 51
 payon 151 127 payon_in01 56 53
 payon 136 158 payon_in01 20 129
 payon 130 169 payon_in01 13 139
-payon 189 233 payon_in03 149 39
-payon 187 233 payon_in03 149 39
+
 payon 270 152 payon_in01 90 9
 pay_arche 36 131 pay_dun00 21 186
 pay_arche 81 17 payon 228 329
@@ -2177,7 +2145,7 @@ ra_in01 241 299 ra_in01 193 312
 ra_in01 185 303 ra_in01 194 249
 ra_in01 357 61 ra_in01 310 62
 ra_in01 297 59 ra_in01 339 116
-ra_temin 28 319 ra_san01 139 139
+
 ra_temin 130 93 ra_temin 239 258
 ra_temin 206 93 ra_temin 312 258
 ra_temin 275 332 ra_temin 27 305
@@ -3121,15 +3089,21 @@ bra_in01 206 98  bra_in01 138 176
 #Inn
 brasilis 274 153 bra_in01 38 9
 bra_in01 39 7 brasilis 273 151
-bra_in01 52 27 bra_in01 85 26
-bra_in01 83 27 bra_in01 50 27
-bra_in01 9 67  bra_in01 154 22
-bra_in01 156 23 bra_in01 11 65
-bra_in01 52 67  bra_in01 87 66
-bra_in01 85 67  bra_in01 50 66
-bra_in01 31 29  bra_in01 23 70
-bra_in01 25 70  bra_in01 32 26
-bra_in01 31 74  bra_in01 148 59
+#bra_in01 52 27 bra_in01 85 26
+#bra_in01 83 27 bra_in01 50 27
+#bra_in01 9 67  bra_in01 154 22
+#bra_in01 156 23 bra_in01 11 65
+#bra_in01 52 67  bra_in01 87 66
+#bra_in01 85 67  bra_in01 50 66
+#bra_in01 31 29  bra_in01 23 70
+#bra_in01 25 70  bra_in01 32 26
+#bra_in01 31 74  bra_in01 148 59
+bra_in01 148 57 bra_in01 31 72
+bra_in01 25 70 bra_in01 32 26
+
+#Bra
+brasilis 308 336 bra_fild01 74 34
+bra_fild01 72 34 brasilis 309 334
 
 #Dungeon
 bra_dun01 199 35 bra_dun02 261 263
@@ -3148,16 +3122,16 @@ dew_fild01 48 65 dew_dun02 302 30
 dew_dun02 305 30 dew_fild01 50 65
 
 # Lasagna
-izlude 195 213 lasagna 206 297 2000 c c r0 n
-lasagna 205 325 lasagna 193 209 2000 c c r1 n
-lasagna 205 325 malangdo 193 209 2000 c c r2 n
+izlude 195 213 lasagna 206 297 200 c c r0 n
+lasagna 205 325 izlude 193 209 200 c c r1 n
+lasagna 205 325 malangdo 193 209 200 c c r2 n
 lasa_fild02 348 244 lasa_dun01 24 143
 lasa_dun01 18 143 lasa_fild02 344 243
 lasa_dun_q 190 14 lasa_dun01 152 98
 lasa_dun01 157 98 lasa_dun02 22 171
 lasa_dun02 18 171 lasa_dun01 153 98
 lasa_dun02 146 58 lasa_dun03 190 18
-lasa_dun03,190,15 lasa_dun02,146 54
+lasa_dun03 190 15 lasa_dun02 146 54
 lasa_fild01 134 381 lasagna 153 58
 lasagna 150 54 lasa_fild01 131 378
 lasa_fild01 341 375 lasagna 327 56
@@ -3199,3 +3173,431 @@ har_in01 34 28 har_in01 99 27
 rockrdg1 33 246 harboro1 362 206
 rockrdg1 371 206 rockrdg2 31 207
 rockrdg2 27 207 rockrdg1 371 206
+
+#int_land
+int_land 49 57 izlude 196 209 0 0
+
+#int_land01
+int_land01 49 57 izlude 196 209 0 0
+
+#int_land02
+int_land02 49 57 izlude 196 209 0 0
+
+#int_land03
+int_land03 49 57 izlude 196 209 0 0
+
+#int_land04
+int_land04 49 57 izlude 196 209 0 0
+
+#int_land05
+int_land05 49 57 izlude 196 209 0 0
+
+#int_land06
+int_land06 49 57 izlude 196 209 0 0
+
+#int_land07
+int_land07 49 57 izlude 196 209 0 0
+
+#int_land08
+int_land08 49 57 izlude 196 209 0 0
+
+#################### Criatura Academy ####################
+#iz_ac01
+iz_ac01 78 25 iz_ac02 201 27 0 0
+iz_ac01 122 25 iz_ac02 214 27 0 0
+iz_ac01 100 24 izlude 127 253 0 0
+
+#iz_ac01_a
+iz_ac01_a 78 25 iz_ac01_a 201 27 0 0
+iz_ac01_a 122 25 iz_ac01_a 214 27 0 0
+iz_ac01_a 100 24 izlude 127 253 0 0
+
+#iz_ac01_b
+iz_ac01_b 78 25 iz_ac01_b 201 27 0 0
+iz_ac01_b 122 25 iz_ac01_b 214 27 0 0
+iz_ac01_b 100 24 izlude 127 253 0 0
+
+#iz_ac01_c
+iz_ac01_c 78 25 iz_ac01_c 201 27 0 0
+iz_ac01_c 122 25 iz_ac01_c 214 27 0 0
+iz_ac01_c 100 24 izlude 127 253 0 0
+
+#iz_ac01_d
+iz_ac01_d 78 25 iz_ac01_d 201 27 0 0
+iz_ac01_d 122 25 iz_ac01_d 214 27 0 0
+iz_ac01_d 100 24 izlude 127 253 0 0
+
+#iz_ac01_e
+iz_ac01_e 78 25 iz_ac02_e 201 27 0 0
+iz_ac01_e 122 25 iz_ac02_e 214 27 0 0
+iz_ac01_e 100 24 izlude 127 253 0 0
+
+#iz_ac01_f
+iz_ac01_f 78 25 iz_ac02_f 201 27 0 0
+iz_ac01_f 122 25 iz_ac02_f 214 27 0 0
+iz_ac01_f 100 24 izlude 127 253 0 0
+
+#iz_ac01_g
+iz_ac01_g 78 25 iz_ac02_g 201 27 0 0
+iz_ac01_g 122 25 iz_ac02_g 214 27 0 0
+iz_ac01_g 100 24 izlude 127 253 0 0
+
+#iz_ac01_h
+iz_ac01_h 78 25 iz_ac02_h 201 27 0 0
+iz_ac01_h 122 25 iz_ac02_h 214 27 0 0
+iz_ac01_h 100 24 izlude 127 253 0 0
+
+#iz_ac02
+iz_ac02 194 44 iz_ac02 80 48 0 0
+iz_ac02 83 48 iz_ac02 197 44 0 0
+iz_ac02 221 44 iz_ac02 127 48 0 0
+iz_ac02 124 48 iz_ac02 218 44 0 0
+iz_ac02 194 60 iz_ac02 80 78 0 0
+iz_ac02 83 78 iz_ac02 197 60 0 0
+iz_ac02 221 60 iz_ac02 128 78 0 0
+iz_ac02 124 78 iz_ac02 218 60 0 0
+iz_ac02 194 76 iz_ac02 80 107 0 0
+iz_ac02 83 107 iz_ac02 197 76 0 0
+iz_ac02 221 76 iz_ac02 127 108 0 0
+iz_ac02 124 108 iz_ac02 218 76 0 0
+iz_ac02 194 92 iz_ac02 80 137 0 0
+iz_ac02 83 137 iz_ac02 197 92 0 0
+iz_ac02 221 92 iz_ac02 127 137 0 0
+iz_ac02 124 137 iz_ac02 218 92 0 0
+iz_ac02 194 108 iz_ac02 80 168 0 0
+iz_ac02 83 168 iz_ac02 197 108 0 0
+iz_ac02 221 108 iz_ac02 127 167 0 0
+iz_ac02 124 167 iz_ac02 218 108 0 0
+iz_ac02 208 121 iz_ac02 103 186 0 0
+iz_ac02 103 183 iz_ac02 208 118 0 0
+iz_ac02 198 27 iz_ac01 78 28 0 0
+iz_ac02 217 27 iz_ac01 122 28 0 0
+
+#iz_ac02_e
+iz_ac02_e 194 44 iz_ac02_e 80 48 0 0
+iz_ac02_e 83 48 iz_ac02_e 197 44 0 0
+iz_ac02_e 221 44 iz_ac02_e 127 48 0 0
+iz_ac02_e 124 48 iz_ac02_e 218 44 0 0
+iz_ac02_e 194 60 iz_ac02_e 80 78 0 0
+iz_ac02_e 83 78 iz_ac02_e 197 60 0 0
+iz_ac02_e 221 60 iz_ac02_e 128 78 0 0
+iz_ac02_e 124 78 iz_ac02_e 218 60 0 0
+iz_ac02_e 194 76 iz_ac02_e 80 107 0 0
+iz_ac02_e 83 107 iz_ac02_e 197 76 0 0
+iz_ac02_e 221 76 iz_ac02_e 127 108 0 0
+iz_ac02_e 124 108 iz_ac02_e 218 76 0 0
+iz_ac02_e 194 92 iz_ac02_e 80 137 0 0
+iz_ac02_e 83 137 iz_ac02_e 197 92 0 0
+iz_ac02_e 221 92 iz_ac02_e 127 137 0 0
+iz_ac02_e 124 137 iz_ac02_e 218 92 0 0
+iz_ac02_e 194 108 iz_ac02_e 80 168 0 0
+iz_ac02_e 83 168 iz_ac02_e 197 108 0 0
+iz_ac02_e 221 108 iz_ac02_e 127 167 0 0
+iz_ac02_e 124 167 iz_ac02_e 218 108 0 0
+iz_ac02_e 208 121 iz_ac02_e 103 186 0 0
+iz_ac02_e 103 183 iz_ac02_e 208 118 0 0
+iz_ac02_e 198 27 iz_ac01_e 78 28 0 0
+iz_ac02_e 217 27 iz_ac01_e 122 28 0 0
+
+#iz_ac02_f
+iz_ac02_f 194 44 iz_ac02_f 80 48 0 0
+iz_ac02_f 83 48 iz_ac02_f 197 44 0 0
+iz_ac02_f 221 44 iz_ac02_f 127 48 0 0
+iz_ac02_f 124 48 iz_ac02_f 218 44 0 0
+iz_ac02_f 194 60 iz_ac02_f 80 78 0 0
+iz_ac02_f 83 78 iz_ac02_f 197 60 0 0
+iz_ac02_f 221 60 iz_ac02_f 128 78 0 0
+iz_ac02_f 124 78 iz_ac02_f 218 60 0 0
+iz_ac02_f 194 76 iz_ac02_f 80 107 0 0
+iz_ac02_f 83 107 iz_ac02_f 197 76 0 0
+iz_ac02_f 221 76 iz_ac02_f 127 108 0 0
+iz_ac02_f 124 108 iz_ac02_f 218 76 0 0
+iz_ac02_f 194 92 iz_ac02_f 80 137 0 0
+iz_ac02_f 83 137 iz_ac02_f 197 92 0 0
+iz_ac02_f 221 92 iz_ac02_f 127 137 0 0
+iz_ac02_f 124 137 iz_ac02_f 218 92 0 0
+iz_ac02_f 194 108 iz_ac02_f 80 168 0 0
+iz_ac02_f 83 168 iz_ac02_f 197 108 0 0
+iz_ac02_f 221 108 iz_ac02_f 127 167 0 0
+iz_ac02_f 124 167 iz_ac02_f 218 108 0 0
+iz_ac02_f 208 121 iz_ac02_f 103 186 0 0
+iz_ac02_f 103 183 iz_ac02_f 208 118 0 0
+iz_ac02_f 198 27 iz_ac01_f 78 28 0 0
+iz_ac02_f 217 27 iz_ac01_f 122 28 0 0
+
+#iz_ac02_g
+iz_ac02_g 194 44 iz_ac02_g 80 48 0 0
+iz_ac02_g 83 48 iz_ac02_g 197 44 0 0
+iz_ac02_g 221 44 iz_ac02_g 127 48 0 0
+iz_ac02_g 124 48 iz_ac02_g 218 44 0 0
+iz_ac02_g 194 60 iz_ac02_g 80 78 0 0
+iz_ac02_g 83 78 iz_ac02_g 197 60 0 0
+iz_ac02_g 221 60 iz_ac02_g 128 78 0 0
+iz_ac02_g 124 78 iz_ac02_g 218 60 0 0
+iz_ac02_g 194 76 iz_ac02_g 80 107 0 0
+iz_ac02_g 83 107 iz_ac02_g 197 76 0 0
+iz_ac02_g 221 76 iz_ac02_g 127 108 0 0
+iz_ac02_g 124 108 iz_ac02_g 218 76 0 0
+iz_ac02_g 194 92 iz_ac02_g 80 137 0 0
+iz_ac02_g 83 137 iz_ac02_g 197 92 0 0
+iz_ac02_g 221 92 iz_ac02_g 127 137 0 0
+iz_ac02_g 124 137 iz_ac02_g 218 92 0 0
+iz_ac02_g 194 108 iz_ac02_g 80 168 0 0
+iz_ac02_g 83 168 iz_ac02_g 197 108 0 0
+iz_ac02_g 221 108 iz_ac02_g 127 167 0 0
+iz_ac02_g 124 167 iz_ac02_g 218 108 0 0
+iz_ac02_g 208 121 iz_ac02_g 103 186 0 0
+iz_ac02_g 103 183 iz_ac02_g 208 118 0 0
+iz_ac02_g 198 27 iz_ac01_g 78 28 0 0
+iz_ac02_g 217 27 iz_ac01_g 122 28 0 0
+
+#iz_ac02_h
+iz_ac02_h 194 44 iz_ac02_h 80 48 0 0
+iz_ac02_h 83 48 iz_ac02_h 197 44 0 0
+iz_ac02_h 221 44 iz_ac02_h 127 48 0 0
+iz_ac02_h 124 48 iz_ac02_h 218 44 0 0
+iz_ac02_h 194 60 iz_ac02_h 80 78 0 0
+iz_ac02_h 83 78 iz_ac02_h 197 60 0 0
+iz_ac02_h 221 60 iz_ac02_h 128 78 0 0
+iz_ac02_h 124 78 iz_ac02_h 218 60 0 0
+iz_ac02_h 194 76 iz_ac02_h 80 107 0 0
+iz_ac02_h 83 107 iz_ac02_h 197 76 0 0
+iz_ac02_h 221 76 iz_ac02_h 127 108 0 0
+iz_ac02_h 124 108 iz_ac02_h 218 76 0 0
+iz_ac02_h 194 92 iz_ac02_h 80 137 0 0
+iz_ac02_h 83 137 iz_ac02_h 197 92 0 0
+iz_ac02_h 221 92 iz_ac02_h 127 137 0 0
+iz_ac02_h 124 137 iz_ac02_h 218 92 0 0
+iz_ac02_h 194 108 iz_ac02_h 80 168 0 0
+iz_ac02_h 83 168 iz_ac02_h 197 108 0 0
+iz_ac02_h 221 108 iz_ac02_h 127 167 0 0
+iz_ac02_h 124 167 iz_ac02_h 218 108 0 0
+iz_ac02_h 208 121 iz_ac02_h 103 186 0 0
+iz_ac02_h 103 183 iz_ac02_h 208 118 0 0
+iz_ac02_h 198 27 iz_ac01_h 78 28 0 0
+iz_ac02_h 217 27 iz_ac01_h 122 28 0 0
+
+#iz_dun00
+iz_dun00 168 173 izlu2dun 108 88 0 0
+iz_dun00 39 41 iz_dun01 41 37 0 0
+iz_dun00 352 342 iz_dun01 253 252 0 0
+
+#iz_dun01
+iz_dun01 41 32 iz_dun00 39 46 0 0
+iz_dun01 253 258 iz_dun00 352 337 0 0
+iz_dun01 118 170 iz_dun02 236 204 0 0
+
+#iz_dun02
+iz_dun02 339 331 iz_dun03 32 63 0 0
+iz_dun02 236 198 iz_dun01 118 165 0 0
+
+#iz_dun03
+iz_dun03 29 63 iz_dun02 339 328 0 0
+iz_dun03 264 245 iz_dun04 26 27 0 0
+
+#iz_dun04
+iz_dun04 26 24 iz_dun03 261 245 0 0
+
+#iz_int
+iz_int 27 30 iz_int 51 30 0 0
+iz_int 47 30 iz_int 22 30 0 0
+iz_int 56 15 int_land 85 107 0 0
+
+#iz_int01
+iz_int01 27 30 iz_int01 51 30 0 0
+iz_int01 47 30 iz_int01 22 30 0 0
+iz_int01 56 15 int_land 85 107 0 0
+
+#iz_int02
+iz_int02 27 30 iz_int02 51 30 0 0
+iz_int02 47 30 iz_int02 22 30 0 0
+iz_int02 56 15 int_land 85 107 0 0
+
+#iz_int03
+iz_int03 27 30 iz_int03 51 30 0 0
+iz_int03 47 30 iz_int03 22 30 0 0
+iz_int03 56 15 int_land 85 107 0 0
+
+#iz_int04
+iz_int04 27 30 iz_int04 51 30 0 0
+iz_int04 47 30 iz_int04 22 30 0 0
+iz_int04 56 15 int_land 85 107 0 0
+
+#iz_int05
+iz_int05 27 30 iz_int05 51 30 0 0
+iz_int05 47 30 iz_int05 22 30 0 0
+iz_int05 56 15 int_land 85 107 0 0
+
+#iz_int06
+iz_int06 27 30 iz_int06 51 30 0 0
+iz_int06 47 30 iz_int06 22 30 0 0
+iz_int06 56 15 int_land 85 107 0 0
+
+#iz_int07
+iz_int07 27 30 iz_int07 51 30 0 0
+iz_int07 47 30 iz_int07 22 30 0 0
+iz_int07 56 15 int_land 85 107 0 0
+
+#iz_int08
+iz_int08 27 30 iz_int08 51 30 0 0
+iz_int08 47 30 iz_int08 22 30 0 0
+iz_int08 56 15 int_land 85 107 0 0
+
+#iz_ng01
+iz_ng01 101 34 iz_ng01 20 70 0 0
+
+#izlu2dun
+izlu2dun 108 83 iz_dun00 168 168 0 0
+
+#izlude
+izlude 20 98 prt_fild08 367 212 0 0
+izlude 110 182 izlude_in 65 87 0 0
+izlude 52 172 izlude_in 74 161 0 0
+izlude 213 161 arena_room 100 30 0 0
+izlude 125 257 iz_ac01 99 29 0 0
+izlude 130 257 iz_ac01 99 29 0 0
+
+#izlude_a
+izlude_a 213 161 arena_room 100 30 0 0
+izlude_a 20 98 prt_fild08 367 212 0 0
+izlude_a 110 182 izlude_in 65 87 0 0
+izlude_a 52 172 izlude_in 74 161 0 0
+izlude_a 125 257 iz_ac01 99 29 0 0
+izlude_a 130 257 iz_ac01 99 29 0 0
+
+#izlude_b
+izlude_b 213 161 arena_room 100 30 0 0
+izlude_b 20 98 prt_fild08 367 212 0 0
+izlude_b 110 182 izlude_in 65 87 0 0
+izlude_b 52 172 izlude_in 74 161 0 0
+izlude_b 125 257 iz_ac01 99 29 0 0
+izlude_b 130 257 iz_ac01 99 29 0 0
+
+#izlude_c
+izlude_c 213 161 arena_room 100 30 0 0
+izlude_c 20 98 prt_fild08 367 212 0 0
+izlude_c 110 182 izlude_in 65 87 0 0
+izlude_c 52 172 izlude_in 74 161 0 0
+izlude_c 125 257 iz_ac01 99 29 0 0
+izlude_c 130 257 iz_ac01 99 29 0 0
+
+#izlude_d
+izlude_d 213 161 arena_room 100 30 0 0
+izlude_d 20 98 prt_fild08 367 212 0 0
+izlude_d 110 182 izlude_in 65 87 0 0
+izlude_d 52 172 izlude_in 74 161 0 0
+izlude_d 125 257 iz_ac01 99 29 0 0
+izlude_d 130 257 iz_ac01 99 29 0 0
+
+#izlude_e
+izlude_e 213 161 arena_room 100 30 0 0
+izlude_e 20 98 prt_fild08 367 212 0 0
+izlude_e 110 182 izlude_in 65 87 0 0
+izlude_e 52 172 izlude_in 74 161 0 0
+izlude_e 125 257 iz_ac01 99 29 0 0
+izlude_e 130 257 iz_ac01 99 29 0 0
+
+#izlude_f
+izlude_f 213 161 arena_room 100 30 0 0
+izlude_f 20 98 prt_fild08 367 212 0 0
+izlude_f 110 182 izlude_in 65 87 0 0
+izlude_f 52 172 izlude_in 74 161 0 0
+izlude_f 125 257 iz_ac01 99 29 0 0
+izlude_f 130 257 iz_ac01 99 29 0 0
+
+#izlude_g
+izlude_g 213 161 arena_room 100 30 0 0
+izlude_g 20 98 prt_fild08 367 212 0 0
+izlude_g 110 182 izlude_in 65 87 0 0
+izlude_g 52 172 izlude_in 74 161 0 0
+izlude_g 125 257 iz_ac01 99 29 0 0
+izlude_g 130 257 iz_ac01 99 29 0 0
+
+#izlude_h
+izlude_h 213 161 arena_room 100 30 0 0
+izlude_h 20 98 prt_fild08 367 212 0 0
+izlude_h 110 182 izlude_in 65 87 0 0
+izlude_h 52 172 izlude_in 74 161 0 0
+izlude_h 125 257 iz_ac01 99 29 0 0
+izlude_h 130 257 iz_ac01 99 29 0 0
+
+#izlude_in
+izlude_in 116 46 izlude 128 98 0 0
+izlude_in 65 84 izlude 112 179 0 0
+izlude_in 74 158 izlude 52 168 0 0
+izlude_in 43 169 izlude_in 63 169 0 0
+izlude_in 87 169 izlude_in 111 169 0 0
+izlude_in 108 169 izlude_in 84 169 0 0
+izlude_in 148 127 izlude 210 161 0 0
+izlude_in 172 139 izlude_in 172 161 0 0
+izlude_in 172 158 izlude_in 172 136 0 0
+izlude_in 172 116 izlude_in 172 94 0 0
+izlude_in 171 97 izlude_in 172 119 0 0
+
+#prt_fild08a
+prt_fild08a 371 212 izlude 24 98 0 0
+prt_fild08a 168 376 prontera 156 26 0 0
+prt_fild08a 16 239 prt_fild07 379 239 0 0
+prt_fild08a 16 187 prt_fild07 380 186 0 0
+prt_fild08a 233 16 moc_fild01 238 378 0 0
+prt_fild08a 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08b
+prt_fild08b 371 212 izlude 24 98 0 0
+prt_fild08b 168 376 prontera 156 26 0 0
+prt_fild08b 16 239 prt_fild07 379 239 0 0
+prt_fild08b 16 187 prt_fild07 380 186 0 0
+prt_fild08b 233 16 moc_fild01 238 378 0 0
+prt_fild08b 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08c
+prt_fild08c 371 212 izlude 24 98 0 0
+prt_fild08c 168 376 prontera 156 26 0 0
+prt_fild08c 16 239 prt_fild07 379 239 0 0
+prt_fild08c 16 187 prt_fild07 380 186 0 0
+prt_fild08c 233 16 moc_fild01 238 378 0 0
+prt_fild08c 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08d
+prt_fild08d 371 212 izlude 24 98 0 0
+prt_fild08d 168 376 prontera 156 26 0 0
+prt_fild08d 16 239 prt_fild07 379 239 0 0
+prt_fild08d 16 187 prt_fild07 380 186 0 0
+prt_fild08d 233 16 moc_fild01 238 378 0 0
+prt_fild08d 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08e
+prt_fild08e 371 212 izlude 24 98 0 0
+prt_fild08e 168 376 prontera 156 26 0 0
+prt_fild08e 16 239 prt_fild07 379 239 0 0
+prt_fild08e 16 187 prt_fild07 380 186 0 0
+prt_fild08e 233 16 moc_fild01 238 378 0 0
+prt_fild08e 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08f
+prt_fild08f 371 212 izlude 24 98 0 0
+prt_fild08f 168 376 prontera 156 26 0 0
+prt_fild08f 16 239 prt_fild07 379 239 0 0
+prt_fild08f 16 187 prt_fild07 380 186 0 0
+prt_fild08f 233 16 moc_fild01 238 378 0 0
+prt_fild08f 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08g
+prt_fild08g 371 212 izlude 24 98 0 0
+prt_fild08g 168 376 prontera 156 26 0 0
+prt_fild08g 16 239 prt_fild07 379 239 0 0
+prt_fild08g 16 187 prt_fild07 380 186 0 0
+prt_fild08g 233 16 moc_fild01 238 378 0 0
+prt_fild08g 55 21 moc_fild01 56 380 0 0
+
+#prt_fild08h
+prt_fild08h 371 212 izlude 24 98 0 0
+prt_fild08h 168 376 prontera 156 26 0 0
+prt_fild08h 16 239 prt_fild07 379 239 0 0
+prt_fild08h 16 187 prt_fild07 380 186 0 0
+prt_fild08h 233 16 moc_fild01 238 378 0 0
+prt_fild08h 55 21 moc_fild01 56 380 0 0
+moc_para01 41 187 moc_para01 179 90
+moc_para01 179 90 moc_para01 41 185
+moc_para01 47 161 moc_para01 47 18
+moc_para01 48 39 moc_para01 106 14

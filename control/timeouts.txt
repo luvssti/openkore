@@ -73,13 +73,13 @@ ai_route_unstuck 2
 # Pause for the specified number of seconds after taking something,
 # it increases the interval between taking several items and between
 # taking the last item and continuing the actions.
-ai_items_take_delay 1.4
+ai_items_take_delay 0.6
 
 # When your monster died, start checking for loot after x seconds
-ai_items_take_start 0.4
+ai_items_take_start 0.2
 
 # Stop checking for loot x seconds after it has begun checking
-ai_items_take_end 1.2
+ai_items_take_end 0.4
 
 # When standing near an item, send the 'take' packet every x seconds until
 # the item has been taken.
@@ -144,6 +144,7 @@ ai_teleport_idle 4
 ai_teleport_portal 2
 ai_teleport_hp 3
 ai_teleport_safe_force 120
+ai_teleport_search 5
 
 ai_teleport_retry 0.5
 ai_teleport_delay 0.5
@@ -204,4 +205,4 @@ welcomeText 4
 patchserver 120
 
 # Time to wait before load map in xKore mode
-ai_clientSuspend 10
+ai_clientSuspend 2

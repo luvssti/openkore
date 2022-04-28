@@ -479,7 +479,7 @@ MB_M_TELEPORT#Pet Teleport#
 MB_B_GAIN#Bongun Gain#
 MB_M_GAIN#Munak Gain#
 MB_MISSION#Mission Timing#
-MB_MUNAKKNOWLEDGE#테이밍 마스터#
+MB_MUNAKKNOWLEDGE#���̹� ������#
 MB_MUNAKBALL#Munak Ball#
 MB_SCROLL#Pet Scroll#
 MB_B_GATHERING#Bongun Gathering#
@@ -581,7 +581,6 @@ NPC_WIDEBLEEDING#Bloody Party#
 NPC_WIDESTONE#Medusa's Stare#
 NPC_WIDECONFUSE#Confusion Rule#
 NPC_WIDESLEEP#Morpheus Slumber#
-NPC_WIDESIGHT#Wide sight#
 NPC_EVILLAND#Evil Land#
 NPC_MAGICMIRROR#Magic Mirror#
 NPC_SLOWCAST#Slow Cast#
@@ -602,34 +601,6 @@ ALL_ANGEL_PROTECT#Thank You So Much!!#
 ALL_DREAM_SUMMERNIGHT#Summer Dream#
 ALL_REVERSEORCISH#Reverse Orcish#
 ALL_WEWISH#Sing along with the Singing Crystal's tune:#
-NPC_WIDEHEALTHFEAR#Wide area fear#
-NPC_WIDEBODYBURNNING#Wide area burnning#
-NPC_WIDEFROSTMISTY#Wide area frost misty#
-NPC_WIDECOLD#Wide area freeze#
-NPC_WIDE_DEEP_SLEEP#Wide area deep sleep#
-NPC_WIDESIREN#Wide area fascination#
-NPC_VENOMFOG#Venom fog#
-NPC_COMET#Comet#
-NPC_ICEMINE#Ice mine#
-NPC_FLAMECROSS#Flame cross#
-NPC_PULSESTRIKE2#Pulse Strike#
-NPC_JACKFROST#Jack Frost#
-NPC_WIDEWEB#Wide web#
-NPC_WIDESUCK#Wide bloodsucking#
-NPC_STORMGUST2#Storm Gust#
-NPC_FIRESTORM#Fire storm#
-NPC_REVERBERATION#Reverberation#
-NPC_LEX_AETERNA#Wide area Lex Aeterna#
-NPC_SR_CURSEDCIRCLE#Cursed Circle#
-NPC_DRAGONBREATH#Dragon's Breath#
-NPC_FATALMENACE#Fatal Menace#
-NPC_MAGMA_ERUPTION#Lava Flow#
-NPC_MANDRAGORA#Mandragora Howl#
-NPC_PSYCHIC_WAVE#Psychic Wave#
-NPC_RAYOFGENESIS#Genesis Ray#
-NPC_CLOUD_KILL#Killing Cloud#
-NPC_IGNITIONBREAK#Ignition Break#
-NPC_EARTHQUAKE_K#Earthquake#
 KN_CHARGEATK#Charge Attack#
 CR_SHRINK#Shrink#
 AS_SONICACCEL#Sonic Acceleration#
@@ -920,12 +891,9 @@ RETURN_TO_ELDICASTES#To El Dicastes#
 ALL_BUYING_STORE#Open Buying Store#
 ALL_GUARDIAN_RECALL#Call of Guardian#
 ALL_ODINS_POWER#Power of Odin#
-NPC_ASSASSINCROSS#Impressive Riff#
-NPC_DISSONANCE#Unchained Serenade#
-NPC_UGLYDANCE#Hip Shaker#
-ALL_RAY_OF_PROTECTION#수호의 빛 #
+ALL_RAY_OF_PROTECTION#��ȣ�� �� #
 MC_CARTDECORATE#Cart Decoration#
-GM_ITEM_ATKMAX#물리 아이템 공격력 최대#
+GM_ITEM_ATKMAX#���� ������ ���ݷ� �ִ�#
 GM_ITEM_ATKMIN#Max Physical item attack rate#
 GM_ITEM_MATKMAX#Minimize Physical item attack rate#
 GM_ITEM_MATKMIN#Minimize Magic item attack rate#
@@ -981,8 +949,7 @@ ECL_SNOWFLIP#Snow Flip#
 ECL_PEONYMAMY#Peony Mommy#
 ECL_SADAGUI#Slapping Herb#
 ECL_SEQUOIADUST#Yggdrasil Dust#
-ECLAGE_RECALL#Return to Eclage#
-ALL_PRONTERA_RECALL#Prontera Recall#
+ECLAGE_RECALL#��Ŭ���� ��ȯ#
 GC_DARKCROW#Dark Claw#
 RA_UNLIMIT#No Limits#
 GN_ILLUSIONDOPING#Hallucination Drug#
@@ -1031,10 +998,6 @@ SU_MEOWMEOW#Meow Meow#
 SU_SPIRITOFLAND#Spirit Of Land#
 SU_CHATTERING#Chattering#
 SU_SPIRITOFSEA#Spirit Of Sea#
-WE_CALLALLFAMILY#Let's Go Family!#
-WE_ONEFOREVER#Love Conquers Death#
-WE_CHEERUP#Go! Parents Go!#
-SKID_CG_SPECIALSINGER#Skilled Special Singer#
 HLIF_HEAL#Healing Hands#
 HLIF_AVOID#Urgent Escape#
 HLIF_BRAIN#Brain Surgery#
@@ -1051,12 +1014,12 @@ HVAN_CAPRICE#Caprice#
 HVAN_CHAOTIC#Chaotic Blessings#
 HVAN_INSTRUCT#Instruction Change#
 HVAN_EXPLOSION#Self-Destruction#
-MH_SUMMON_LEGION#Summon Legion#
-MH_NEEDLE_OF_PARALYZE#Needle of Paralysis#
+MH_SUMMON_LEGION#Call Legion#
+MH_NEEDLE_OF_PARALYZE#Needle Of Paralyze#
 MH_POISON_MIST#Poison Mist#
 MH_PAIN_KILLER#Pain Killer#
-MH_LIGHT_OF_REGENE#Light of Regeneration#
-MH_OVERED_BOOST#Over Boost#
+MH_LIGHT_OF_REGENE#Light Of Regenerate#
+MH_OVERED_BOOST#Overed Boost#
 MH_ERASER_CUTTER#Eraser Cutter#
 MH_XENO_SLASHER#Xeno Slasher#
 MH_SILENT_BREEZE#Silent Breeze#
@@ -1067,11 +1030,11 @@ MH_MIDNIGHT_FRENZY#Midnight Frenzy#
 MH_STAHL_HORN#Stahl Horn#
 MH_GOLDENE_FERSE#Goldene Ferse#
 MH_STEINWAND#Stein Wand#
-MH_HEILIGE_STANGE#Heilage Stange#
-MH_ANGRIFFS_MODUS#Angriffs Modus#
+MH_HEILIGE_STANGE#Heilige Stange#
+MH_ANGRIFFS_MODUS#Angriffs_Modus#
 MH_TINDER_BREAKER#Tinder Breaker#
-MH_CBC#C.B.C : Continual Break Combo#
-MH_EQC#E.Q.C : Eternal Quick Combo#
+MH_CBC#C.B.C (Continual Break Combo)#
+MH_EQC#E.Q.C (Eternal Quick Combo)#
 MH_MAGMA_FLOW#Magma Flow#
 MH_GRANITIC_ARMOR#Granitic Armor#
 MH_LAVA_SLIDE#Lava Slide#
@@ -1139,6 +1102,7 @@ EL_CHILLY_AIR#Chilly Air#
 EL_GUST#Gust#
 EL_BLAST#Blast Mine#
 EL_WILD_STORM#Wild Storm#
+EL_PETROLOGY#Petrology#
 EL_CURSED_SOIL#Cursed Soil#
 EL_UPHEAVAL#Upheaval#
 EL_FIRE_ARROW#Fire Arrow#
@@ -1172,7 +1136,5 @@ GD_HAWKEYES#Sharp Gaze#
 GD_BATTLEORDER#Battle Command#
 GD_REGENERATION#Regeneration#
 GD_RESTORE#Restoration#
-GD_EMERGENCYCALL#Urgent Call#
 GD_DEVELOPMENT#Permanent Development#
 GD_ITEMEMERGENCYCALL#Faux Urgent Call#
-GD_GUILD_STORAGE#Guild Storage Extension#
