@@ -795,7 +795,7 @@ sellAuto_distance 3
 sellAuto_maxDistance
 sellAuto_npc_steps s
 
-storageAuto 0
+storageAuto 1
 storageAuto_npc
 storageAuto_standpoint
 storageAuto_distance 3
